@@ -388,47 +388,12 @@
               "markdownCss" : ".label { font-weight: 400; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #424242; } .value { padding: 4px; font-weight: 500; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .title { font-weight: 600; font-size: 18px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .value-block { height: 100%; } .active { border-radius: 6px; background: #303F9F; color: #E8EAF6; } .inactive { border-radius: 6px; background: #F5F5F5; color: #757575; }"
             },
             "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "active",
-                "label" : "Status",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
-                "settings" : { }
-              }, {
-                "name" : "lastActivityTime",
-                "label" : "Last Activity",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
-                "settings" : { },
-                "usePostProcessing" : true,
-                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
-              }, {
-                "name" : "lastConnectTime",
-                "label" : "Last Connect",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
-                "settings" : { },
-                "usePostProcessing" : true,
-                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
-              }, {
-                "name" : "lastDisconnectTime",
-                "label" : "Last Disconnect",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
-                "settings" : { },
-                "usePostProcessing" : true,
-                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
-              }, {
-                "name" : "inactivityAlarmTime",
-                "label" : "Inactivity Alarm",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
-                "settings" : { },
-                "usePostProcessing" : true,
-                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
-              } ],
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ]
           },
           "id" : "9e5b48e1-d9a0-4734-8c42-ebcc9e502eae",
@@ -455,8 +420,8 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionRate",
                 "type" : "timeseries",
@@ -472,6 +437,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
               "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
@@ -1762,7 +1730,7 @@
             "defaultStateGroupType" : null,
             "defaultStateEntityGroup" : null,
             "groupType" : "DEVICE",
-            "entityGroup" : "40468aa0-b262-11f1-9b75-572f450238a2"
+            "entityGroup" : "d684bec0-b01d-11f1-9b75-572f450238a2"
           }
         }
       },
