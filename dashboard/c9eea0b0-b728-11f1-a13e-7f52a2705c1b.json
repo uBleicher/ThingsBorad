@@ -247,7 +247,7 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "BatchDownTimeUnscheduled",
+                "name" : "UnscheduledDownTime_1d",
                 "label" : "Unscheduled Down Time",
                 "type" : "timeseries",
                 "decimals" : 0,
@@ -255,9 +255,14 @@
                 "settings" : {
                   "yAxisId" : null,
                   "showLegend" : true
-                }
+                },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
-                "name" : "BatchDownTimeScheduled",
+                "name" : "ScheduledDownTime_1d",
                 "label" : "Scheduled Down Time",
                 "type" : "timeseries",
                 "decimals" : 0,
@@ -265,17 +270,19 @@
                 "settings" : {
                   "yAxisId" : null,
                   "showLegend" : true
-                }
+                },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
-                "name" : "BatchUpTime",
-                "label" : "Up Time",
+                "name" : "UpTime_1d",
                 "type" : "timeseries",
-                "decimals" : 0,
+                "label" : "Up Time",
                 "color" : "#4CAF50",
-                "settings" : {
-                  "yAxisId" : null,
-                  "showLegend" : true
-                }
+                "settings" : { },
+                "decimals" : 0
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
