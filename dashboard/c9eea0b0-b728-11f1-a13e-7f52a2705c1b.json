@@ -71,8 +71,12 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
@@ -95,10 +99,15 @@
                   "maxValue" : 100
                 }
               },
-              "showValue" : true
+              "showValue" : true,
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
             },
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "TempENV",
                 "label" : "Environment Temperature",
@@ -106,8 +115,11 @@
                 "color" : "#000000DE",
                 "settings" : { }
               } ],
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
-            } ]
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "backgroundColor" : null
           },
           "id" : "b35ccb01-eff0-4a6b-aaad-c0a25378953f",
           "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
@@ -159,10 +171,81 @@
                 "position" : "left"
               },
               "yAxes" : { },
-              "layout" : "with_total"
+              "layout" : "with_total",
+              "sortSeries" : false,
+              "animation" : {
+                "animation" : true,
+                "animationThreshold" : 2000,
+                "animationDuration" : 1000,
+                "animationEasing" : "cubicOut",
+                "animationDelay" : 0,
+                "animationDurationUpdate" : 500,
+                "animationEasingUpdate" : "cubicOut",
+                "animationDelayUpdate" : 0
+              },
+              "legendPosition" : "right",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(0, 0, 0, 0.38)",
+              "legendValueFont" : {
+                "family" : "Roboto",
+                "size" : 14,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "20px"
+              },
+              "legendValueColor" : "rgba(0, 0, 0, 0.87)",
+              "legendShowTotal" : true,
+              "showTooltip" : true,
+              "tooltipValueType" : "percentage",
+              "tooltipValueDecimals" : 0,
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 13,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "autoScale" : true,
+              "clockwise" : false,
+              "totalValueFont" : {
+                "family" : "Roboto",
+                "size" : 24,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "1"
+              },
+              "totalValueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              }
             },
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "BatchDownTimeUnscheduled",
                 "label" : "Unscheduled Down Time",
@@ -194,8 +277,16 @@
                   "showLegend" : true
                 }
               } ],
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
-            } ]
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "titleColor" : null,
+            "showTitleIcon" : null,
+            "titleIcon" : null,
+            "iconColor" : null,
+            "units" : null,
+            "decimals" : null
           },
           "id" : "ce6d3918-b1e2-45e5-8e3c-38d557d1ed34",
           "typeFullFqn" : "system.horizontal_doughnut",
@@ -271,7 +362,8 @@
               "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
             },
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "TempCPU",
                 "label" : "CPU Temperature",
@@ -279,7 +371,9 @@
                 "color" : "#000000DE",
                 "settings" : { }
               } ],
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "backgroundColor" : null
           },
@@ -313,11 +407,19 @@
             "settings" : {
               "alarmsTitle" : "Alarms",
               "enableSelection" : true,
-              "enableSearch" : true
+              "enableSearch" : true,
+              "displayActivity" : null,
+              "displayDetails" : null,
+              "allowAssign" : null,
+              "allowAcknowledgment" : null,
+              "allowClear" : null,
+              "enableFilter" : true,
+              "enableSelectColumnDisplay" : true
             },
             "alarmSource" : {
-              "type" : "entity",
+              "type" : "device",
               "name" : "alarms",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "label" : "Created Time",
@@ -349,7 +451,9 @@
                 "color" : "var(--tb-primary-500)",
                 "settings" : { }
               } ],
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             },
             "alarmFilterConfig" : {
               "typeList" : [ ],
@@ -357,7 +461,15 @@
               "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
               "searchPropagatedAlarms" : true
             },
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "titleColor" : null,
+            "showTitleIcon" : null,
+            "titleIcon" : null,
+            "iconColor" : null,
+            "enableDataExport" : true,
+            "enableFullscreen" : true,
+            "color" : null,
+            "backgroundColor" : null
           },
           "id" : "351349a8-5c1c-4dfc-baf3-f11d9faa8682",
           "typeFullFqn" : "system.alarm_widgets.alarms_table",
@@ -732,8 +844,8 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "steamConsumption_1d",
                 "type" : "timeseries",
@@ -750,6 +862,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
               "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
@@ -1042,8 +1157,8 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "steamConsumption_1d",
                 "type" : "timeseries",
@@ -1060,6 +1175,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
               "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
@@ -1352,8 +1470,8 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a",
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "steamConsumption_1d",
                 "type" : "timeseries",
@@ -1370,6 +1488,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
               "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
