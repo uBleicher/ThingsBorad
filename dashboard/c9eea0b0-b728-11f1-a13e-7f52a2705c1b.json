@@ -1800,9 +1800,9 @@
               "name" : "",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "TotalNoResetUpTime",
+                "name" : "UpTimeDelta",
                 "type" : "timeseries",
-                "label" : "TotalNoResetUpTime",
+                "label" : "UpTime",
                 "color" : "#4CAF50",
                 "settings" : {
                   "yAxisId" : "default",
@@ -1880,9 +1880,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "TotalNoResetDownTimeScheduled",
+                "name" : "ScheduledDownTimeDelta",
                 "type" : "timeseries",
-                "label" : "TotalNoResetDownTimeScheduled",
+                "label" : "DownTimeScheduled",
                 "color" : "#E89623",
                 "settings" : {
                   "yAxisId" : "default",
@@ -1954,11 +1954,15 @@
                   }
                 },
                 "units" : "s",
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
-                "name" : "TotalNoResetDownTimeUnscheduled",
+                "name" : "UnscheduledDownTimeDelta",
                 "type" : "timeseries",
-                "label" : "TotalNoResetDownTimeUnscheduled",
+                "label" : "DownTimeUnscheduled",
                 "color" : "#f44336",
                 "settings" : {
                   "yAxisId" : "default",
@@ -2029,7 +2033,11 @@
                     "color" : ""
                   }
                 },
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
