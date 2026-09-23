@@ -63,7 +63,7 @@
             "actions" : { },
             "settings" : {
               "minValue" : 0,
-              "maxValue" : 100,
+              "maxValue" : 88,
               "gaugeType" : "arc",
               "showTitle" : true,
               "title" : "Environment Temperature",
@@ -96,7 +96,7 @@
                     "color" : "rgba(255, 0, 0, 1)"
                   } ],
                   "minValue" : 0,
-                  "maxValue" : 100
+                  "maxValue" : 88
                 }
               },
               "showValue" : true,
@@ -326,7 +326,7 @@
             "actions" : { },
             "settings" : {
               "minValue" : 0,
-              "maxValue" : 100,
+              "maxValue" : 110,
               "gaugeType" : "arc",
               "showTitle" : true,
               "title" : "CPU Temperature",
@@ -340,7 +340,7 @@
               "minMaxFont" : {
                 "color" : null
               },
-              "showMinMax" : true,
+              "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
                 "color" : "#FF9800",
@@ -359,7 +359,7 @@
                     "color" : "rgba(255, 0, 0, 1)"
                   } ],
                   "minValue" : 0,
-                  "maxValue" : 100
+                  "maxValue" : 110
                 }
               },
               "showValue" : true,
