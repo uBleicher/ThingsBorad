@@ -1,0 +1,47 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Raspberry Pi 4 — installed via IoT Hub"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "MQTT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "2e3e1d20-b7f1-11f1-b020-572f450238a2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "2f6bc7b0-b7f1-11f1-890c-f73439e59bea"
+    },
+    "label" : "Raspberry Pi 4",
+    "name" : "Raspberry Pi 4",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Raspberry Pi 4"
+  },
+  "credentials" : {
+    "credentialsId" : "ixAsYFiEuU2PgUbmfzNB",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
