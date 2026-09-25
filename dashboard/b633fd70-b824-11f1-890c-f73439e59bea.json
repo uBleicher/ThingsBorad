@@ -164,7 +164,7 @@
               "dataKeys" : [ {
                 "name" : "PieceCount_1d",
                 "type" : "timeseries",
-                "label" : "",
+                "label" : " ${SerialNumber}",
                 "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
@@ -250,13 +250,15 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -331,7 +333,7 @@
                 "lineHeight" : "16px"
               },
               "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "showTooltip" : true,
+              "showTooltip" : false,
               "tooltipTrigger" : "axis",
               "tooltipValueFont" : {
                 "family" : "Roboto",
@@ -442,7 +444,7 @@
                 "animationDelayUpdate" : 0
               },
               "padding" : "12px",
-              "comparisonEnabled" : false,
+              "comparisonEnabled" : true,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
               "comparisonXAxis" : {
@@ -625,10 +627,10 @@
         "history" : {
           "historyType" : 1,
           "fixedTimewindow" : {
-            "startTimeMs" : 1789768800000,
-            "endTimeMs" : 1790373599999
+            "startTimeMs" : 1790114399999,
+            "endTimeMs" : 1790719199999
           },
-          "interval" : 3600000,
+          "interval" : 1210000,
           "hideInterval" : false,
           "hideLastInterval" : false,
           "hideQuickInterval" : false
