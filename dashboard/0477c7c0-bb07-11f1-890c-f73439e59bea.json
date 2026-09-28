@@ -29,7 +29,7 @@
               "dataKeys" : [ {
                 "name" : "PieceCount_1d",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "Pieces",
                 "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
@@ -126,7 +126,7 @@
                 "valueFormat" : null
               },
               "thresholds" : [ ],
-              "dataZoom" : true,
+              "dataZoom" : false,
               "stack" : false,
               "yAxis" : {
                 "show" : true,
