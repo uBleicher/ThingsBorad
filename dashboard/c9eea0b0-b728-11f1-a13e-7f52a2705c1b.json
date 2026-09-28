@@ -1819,7 +1819,7 @@
                 "name" : "UpTime_1d",
                 "type" : "timeseries",
                 "label" : "UpTime",
-                "color" : "#048AD3",
+                "color" : "#4CAF50",
                 "settings" : {
                   "type" : "bar",
                   "yAxisId" : "default"
@@ -1834,12 +1834,12 @@
                 "name" : "ScheduledDownTimeDelta",
                 "type" : "timeseries",
                 "label" : "DownTimeScheduled",
-                "color" : "#4caf50",
+                "color" : "#E89623",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
-                  "type" : "line",
+                  "type" : "bar",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
@@ -1915,7 +1915,7 @@
                   "yAxisId" : "default",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
-                  "type" : "line",
+                  "type" : "bar",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
@@ -1980,7 +1980,8 @@
                     "color" : ""
                   }
                 },
-                "decimals" : 0
+                "decimals" : 0,
+                "units" : "h"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1990,7 +1991,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : false,
+              "showLegend" : true,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -2026,7 +2027,7 @@
                 "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
               },
               "thresholds" : [ ],
-              "stack" : false,
+              "stack" : true,
               "grid" : {
                 "show" : false,
                 "backgroundColor" : null,
@@ -2084,7 +2085,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
+                    "value" : 24,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -2165,15 +2166,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
-                "position" : "top",
+                "position" : "right",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -2292,7 +2291,7 @@
                   "sizeX" : 12,
                   "sizeY" : 13,
                   "col" : 12,
-                  "row" : 11
+                  "row" : 21
                 },
                 "9e5b48e1-d9a0-4734-8c42-ebcc9e502eae" : {
                   "sizeX" : 12,
@@ -2327,8 +2326,8 @@
                 "b72526e6-5520-096a-902d-1de41052b9e2" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 24,
-                  "col" : 0
+                  "row" : 11,
+                  "col" : 12
                 }
               },
               "gridSettings" : {
