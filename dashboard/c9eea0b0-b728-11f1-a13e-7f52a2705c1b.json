@@ -292,7 +292,12 @@
             "showTitleIcon" : null,
             "titleIcon" : null,
             "iconColor" : null,
-            "units" : "h",
+            "units" : {
+              "from" : "h",
+              "METRIC" : "h",
+              "IMPERIAL" : "s",
+              "HYBRID" : "h"
+            },
             "decimals" : null
           },
           "id" : "ce6d3918-b1e2-45e5-8e3c-38d557d1ed34",
