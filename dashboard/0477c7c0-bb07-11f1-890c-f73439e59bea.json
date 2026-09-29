@@ -506,6 +506,408 @@
           },
           "sizeX" : 8,
           "sizeY" : 8
+        },
+        "2dc31648-f2fe-459d-b6e0-778e8db601d6" : {
+          "id" : "2dc31648-f2fe-459d-b6e0-778e8db601d6",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "SF27 - Tagesstückzahlen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "9cc76a3d-74eb-9f84-cfd7-1d63b39b902d",
+              "dataKeys" : [ {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "${entityLabel}",
+                "color" : "#2196f3",
+                "settings" : {
+                  "type" : "bar",
+                  "yAxisId" : "default"
+                },
+                "decimals" : 0
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "decimals" : 0
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 16,
+          "sizeY" : 8
+        },
+        "73948685-3dc9-423a-8bbe-66493b59a214" : {
+          "id" : "73948685-3dc9-423a-8bbe-66493b59a214",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.entities_table",
+          "config" : {
+            "title" : "SF27 Maschinen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "9cc76a3d-74eb-9f84-cfd7-1d63b39b902d",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Maschine / Seriennummer",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Stückzahl (1d)",
+                "color" : "#4caf50",
+                "settings" : { },
+                "decimals" : 0
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "5f455b5f-0213-4671-a7af-037fdfd0c378",
+                "name" : "Open details",
+                "icon" : "open_in_new",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "details",
+                "setEntityId" : true
+              } ]
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 8,
+          "sizeY" : 8
+        },
+        "77e52bc3-5ad8-4f6e-bb02-d855f5f6480d" : {
+          "id" : "77e52bc3-5ad8-4f6e-bb02-d855f5f6480d",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "TF57 - Tagesstückzahlen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41285c7f-b673-4912-9d1e-9bb954a8aba2",
+              "dataKeys" : [ {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "${entityLabel}",
+                "color" : "#2196f3",
+                "settings" : {
+                  "type" : "bar",
+                  "yAxisId" : "default"
+                },
+                "decimals" : 0
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "decimals" : 0
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 16,
+          "sizeY" : 8
+        },
+        "a0665fe4-f8b6-4d72-8c40-38fd0102d605" : {
+          "id" : "a0665fe4-f8b6-4d72-8c40-38fd0102d605",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.entities_table",
+          "config" : {
+            "title" : "TF57 Maschinen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41285c7f-b673-4912-9d1e-9bb954a8aba2",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Maschine / Seriennummer",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Stückzahl (1d)",
+                "color" : "#4caf50",
+                "settings" : { },
+                "decimals" : 0
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "946dc6a9-05cc-4639-9383-88cf45b23b3a",
+                "name" : "Open details",
+                "icon" : "open_in_new",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "details",
+                "setEntityId" : true
+              } ]
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 8,
+          "sizeY" : 8
+        },
+        "b8864ed2-33c9-4ff1-986b-9f6c2c2f6dc6" : {
+          "id" : "b8864ed2-33c9-4ff1-986b-9f6c2c2f6dc6",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "CF20 - Tagesstückzahlen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bb4c1f90-2766-44fb-b005-001d91e3b6ef",
+              "dataKeys" : [ {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "${entityLabel}",
+                "color" : "#2196f3",
+                "settings" : {
+                  "type" : "bar",
+                  "yAxisId" : "default"
+                },
+                "decimals" : 0
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "decimals" : 0
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 16,
+          "sizeY" : 8
+        },
+        "a412e972-ff26-4324-acab-d376c89761f3" : {
+          "id" : "a412e972-ff26-4324-acab-d376c89761f3",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.entities_table",
+          "config" : {
+            "title" : "CF20 Maschinen",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bb4c1f90-2766-44fb-b005-001d91e3b6ef",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Maschine / Seriennummer",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Stückzahl (1d)",
+                "color" : "#4caf50",
+                "settings" : { },
+                "decimals" : 0
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "2f463656-1eea-4af6-be96-599805be9c24",
+                "name" : "Open details",
+                "icon" : "open_in_new",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "details",
+                "setEntityId" : true
+              } ]
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 8,
+          "sizeY" : 8
         }
       },
       "states" : {
@@ -514,7 +916,20 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "2dc31648-f2fe-459d-b6e0-778e8db601d6" : {
+                  "sizeX" : 16,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "73948685-3dc9-423a-8bbe-66493b59a214" : {
+                  "sizeX" : 8,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 16
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -561,7 +976,20 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "77e52bc3-5ad8-4f6e-bb02-d855f5f6480d" : {
+                  "sizeX" : 16,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "a0665fe4-f8b6-4d72-8c40-38fd0102d605" : {
+                  "sizeX" : 8,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 16
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -578,7 +1006,20 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "b8864ed2-33c9-4ff1-986b-9f6c2c2f6dc6" : {
+                  "sizeX" : 16,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "a412e972-ff26-4324-acab-d376c89761f3" : {
+                  "sizeX" : 8,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 16
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -721,7 +1162,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682245605,
+        "aiUpdateTs" : 1790682257261,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
