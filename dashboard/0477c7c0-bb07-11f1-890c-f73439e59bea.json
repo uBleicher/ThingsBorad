@@ -665,86 +665,122 @@
           "sizeX" : 18,
           "sizeY" : 6
         },
-        "3f4c6553-334a-9153-3938-1d5ead155155" : {
-          "id" : "3f4c6553-334a-9153-3938-1d5ead155155",
+        "d5003625-f3b8-f481-75c7-95e22a5b917b" : {
+          "typeFullFqn" : "system.action_button",
           "type" : "latest",
-          "typeFullFqn" : "system.cards.entities_table",
+          "sizeX" : 3,
+          "sizeY" : 1,
           "config" : {
-            "title" : "Maschinenliste (Klick für Details)",
-            "showTitle" : true,
-            "configMode" : "basic",
-            "dropShadow" : false,
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "titleFont" : {
-              "size" : 21,
-              "sizeUnit" : "px",
-              "weight" : "500",
-              "lineHeight" : "22px"
-            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "bec122ce-d8f2-f56f-2332-6844deb0af6d",
-              "dataKeys" : [ {
-                "name" : "MachineType",
-                "type" : "timeseries",
-                "label" : "MachineType",
-                "color" : "#4caf50",
-                "settings" : {
-                  "customTitle" : "",
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible",
-                  "disableSorting" : false
-                },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null,
-                "comparisonEnabled" : null
-              } ]
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
-            "enableFullscreen" : false,
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
             "settings" : {
-              "enableSearch" : true,
-              "displayPagination" : true,
-              "defaultPageSize" : 10,
-              "displayEntityName" : false,
-              "displayEntityLabel" : false,
-              "displayEntityType" : false,
-              "entitiesTitle" : null,
-              "enableSelectColumnDisplay" : true
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "SF27",
+                "showIcon" : true,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
             },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
             "actions" : {
-              "rowClick" : [ {
-                "id" : "d2264cc6-9a1d-4ff1-93eb-b0c241e8bbb7",
-                "name" : "Open details",
-                "icon" : "open_in_new",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "details",
-                "setEntityId" : true
+              "click" : [ {
+                "id" : "c88a75f1-3549-adca-a560-7a03defb8bed",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "sf27",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
               } ]
-            },
-            "enableDataExport" : true,
-            "titleColor" : null,
-            "showTitleIcon" : null,
-            "titleIcon" : null,
-            "iconColor" : null,
-            "color" : null,
-            "backgroundColor" : null
+            }
           },
-          "sizeX" : 8,
-          "sizeY" : 8
+          "row" : 0,
+          "col" : 0,
+          "id" : "d5003625-f3b8-f481-75c7-95e22a5b917b"
         }
       },
       "states" : {
@@ -787,13 +823,13 @@
                 "9827593c-1fbb-4189-9287-479f9c104359" : {
                   "sizeX" : 24,
                   "sizeY" : 8,
-                  "row" : 0,
+                  "row" : 1,
                   "col" : 0
                 },
-                "3f4c6553-334a-9153-3938-1d5ead155155" : {
-                  "sizeX" : 24,
-                  "sizeY" : 8,
-                  "row" : 8,
+                "d5003625-f3b8-f481-75c7-95e22a5b917b" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
                   "col" : 0
                 }
               },
