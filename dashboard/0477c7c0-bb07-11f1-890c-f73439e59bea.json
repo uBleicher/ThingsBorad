@@ -557,6 +557,16 @@
             "groupType" : "DEVICE",
             "entityGroup" : "e2aec200-b80f-11f1-890c-f73439e59bea"
           }
+        },
+        "41285c7f-b673-4912-9d1e-9bb954a8aba2" : {
+          "id" : "41285c7f-b673-4912-9d1e-9bb954a8aba2",
+          "alias" : "TF57",
+          "filter" : {
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroup" : "60d85f50-bb40-11f1-b020-572f450238a2",
+            "type" : "entityGroup"
+          }
         }
       },
       "filters" : {
@@ -612,7 +622,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682228719,
+        "aiUpdateTs" : 1790682236021,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
