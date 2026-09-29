@@ -430,6 +430,82 @@
           "row" : 0,
           "col" : 0,
           "id" : "3daf03e1-9cef-6428-2481-7cd97b6db565"
+        },
+        "9827593c-1fbb-4189-9287-479f9c104359" : {
+          "id" : "9827593c-1fbb-4189-9287-479f9c104359",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.entities_table",
+          "config" : {
+            "title" : "Maschinenliste (Klick für Details)",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bec122ce-d8f2-f56f-2332-6844deb0af6d",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Maschine / Seriennummer",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "MachineType",
+                "type" : "timeseries",
+                "label" : "Typ",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Stückzahl (1d)",
+                "color" : "#f44336",
+                "settings" : { },
+                "decimals" : 0
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "d2264cc6-9a1d-4ff1-93eb-b0c241e8bbb7",
+                "name" : "Open details",
+                "icon" : "open_in_new",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "details",
+                "setEntityId" : true
+              } ]
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 8,
+          "sizeY" : 8
         }
       },
       "states" : {
@@ -461,6 +537,12 @@
                   "sizeY" : 8,
                   "row" : 0,
                   "col" : 0
+                },
+                "9827593c-1fbb-4189-9287-479f9c104359" : {
+                  "sizeX" : 8,
+                  "sizeY" : 8,
+                  "row" : 0,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
@@ -639,7 +721,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682243265,
+        "aiUpdateTs" : 1790682245605,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
