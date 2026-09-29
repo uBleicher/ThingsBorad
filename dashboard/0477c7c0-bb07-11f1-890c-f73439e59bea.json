@@ -498,8 +498,25 @@
         }
       },
       "states" : {
-        "default" : {
-          "name" : "PieceCount",
+        "sf27" : {
+          "name" : "SF27",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "all" : {
+          "name" : "All",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -528,6 +545,48 @@
               }
             }
           }
+        },
+        "tf57" : {
+          "name" : "TF57",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "cf20" : {
+          "name" : "CF20",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "3daf03e1-9cef-6428-2481-7cd97b6db565" : {
+                  "sizeX" : 24,
+                  "sizeY" : 8,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -537,12 +596,26 @@
           "filter" : {
             "type" : "entityGroup",
             "resolveMultiple" : true,
-            "groupStateEntity" : true,
+            "groupStateEntity" : false,
             "stateEntityParamName" : null,
             "defaultStateGroupType" : "DEVICE",
             "defaultStateEntityGroup" : "60d85f50-bb40-11f1-b020-572f450238a2",
             "groupType" : "DEVICE",
-            "entityGroup" : "d684bec0-b01d-11f1-9b75-572f450238a2"
+            "entityGroup" : "909a2c00-bb40-11f1-b020-572f450238a2"
+          }
+        },
+        "9cc76a3d-74eb-9f84-cfd7-1d63b39b902d" : {
+          "id" : "9cc76a3d-74eb-9f84-cfd7-1d63b39b902d",
+          "alias" : "SF27",
+          "filter" : {
+            "type" : "entityGroup",
+            "resolveMultiple" : true,
+            "groupStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateGroupType" : null,
+            "defaultStateEntityGroup" : null,
+            "groupType" : "DEVICE",
+            "entityGroup" : "e2aec200-b80f-11f1-890c-f73439e59bea"
           }
         }
       },
