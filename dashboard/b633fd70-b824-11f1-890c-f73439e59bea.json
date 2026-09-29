@@ -95,6 +95,12 @@
                 "color" : "#9c27b0",
                 "settings" : { },
                 "decimals" : 0
+              }, {
+                "name" : "PieceCount",
+                "type" : "timeseries",
+                "label" : "PieceCount",
+                "color" : "#9c27b0",
+                "settings" : { }
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
