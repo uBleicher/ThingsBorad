@@ -567,6 +567,16 @@
             "entityGroup" : "60d85f50-bb40-11f1-b020-572f450238a2",
             "type" : "entityGroup"
           }
+        },
+        "bb4c1f90-2766-44fb-b005-001d91e3b6ef" : {
+          "id" : "bb4c1f90-2766-44fb-b005-001d91e3b6ef",
+          "alias" : "CF20",
+          "filter" : {
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroup" : "909a2c00-bb40-11f1-b020-572f450238a2",
+            "type" : "entityGroup"
+          }
         }
       },
       "filters" : {
@@ -622,7 +632,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682236021,
+        "aiUpdateTs" : 1790682237808,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
