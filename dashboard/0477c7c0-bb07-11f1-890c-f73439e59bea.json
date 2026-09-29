@@ -491,6 +491,24 @@
               }
             }
           }
+        },
+        "cf20" : {
+          "name" : "CF20",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -576,7 +594,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682222049,
+        "aiUpdateTs" : 1790682225173,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
