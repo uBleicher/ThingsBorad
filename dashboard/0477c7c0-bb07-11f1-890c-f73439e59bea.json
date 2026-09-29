@@ -23,13 +23,13 @@
           "sizeY" : 5,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "54959300-b827-11f1-890c-f73439e59bea",
+              "entityAliasId" : "bec122ce-d8f2-f56f-2332-6844deb0af6d",
               "dataKeys" : [ {
                 "name" : "PieceCount_1d",
                 "type" : "timeseries",
-                "label" : "Pieces",
+                "label" : "${entityLabel}",
                 "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
@@ -115,15 +115,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : false
               },
               "thresholds" : [ ],
               "dataZoom" : false,
@@ -530,7 +528,22 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "bec122ce-d8f2-f56f-2332-6844deb0af6d" : {
+          "id" : "bec122ce-d8f2-f56f-2332-6844deb0af6d",
+          "alias" : "veit_machines",
+          "filter" : {
+            "type" : "entityGroup",
+            "resolveMultiple" : true,
+            "groupStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateGroupType" : "DEVICE",
+            "defaultStateEntityGroup" : "60d85f50-bb40-11f1-b020-572f450238a2",
+            "groupType" : "DEVICE",
+            "entityGroup" : "d684bec0-b01d-11f1-9b75-572f450238a2"
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "selectedTab" : 0,
