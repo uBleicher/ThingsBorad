@@ -577,6 +577,14 @@
             "entityGroup" : "909a2c00-bb40-11f1-b020-572f450238a2",
             "type" : "entityGroup"
           }
+        },
+        "1f4fe0c0-b78d-49ea-8872-93c75087239a" : {
+          "id" : "1f4fe0c0-b78d-49ea-8872-93c75087239a",
+          "alias" : "Selected Machine",
+          "filter" : {
+            "resolveMultiple" : false,
+            "type" : "stateEntity"
+          }
         }
       },
       "filters" : {
@@ -632,7 +640,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682237808,
+        "aiUpdateTs" : 1790682239398,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
