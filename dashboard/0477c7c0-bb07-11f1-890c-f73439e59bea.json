@@ -491,31 +491,6 @@
               }
             }
           }
-        },
-        "cf20" : {
-          "name" : "CF20",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "3daf03e1-9cef-6428-2481-7cd97b6db565" : {
-                  "sizeX" : 24,
-                  "sizeY" : 8,
-                  "mobileHeight" : null,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
-              }
-            }
-          }
         }
       },
       "entityAliases" : {
@@ -598,6 +573,11 @@
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
         "toolbarAlwaysOpen" : true
+      },
+      "additionalInfo" : {
+        "aiUpdated" : true,
+        "aiUpdateTs" : 1790682222049,
+        "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
     "resources" : null,
