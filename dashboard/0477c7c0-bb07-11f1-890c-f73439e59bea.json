@@ -538,8 +538,17 @@
                 "type" : "timeseries",
                 "label" : "SerialNumber",
                 "color" : "#4caf50",
-                "settings" : { }
-              } ]
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "enableFullscreen" : false,
             "settings" : {
