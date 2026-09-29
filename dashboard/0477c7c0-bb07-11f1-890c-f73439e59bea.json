@@ -908,6 +908,254 @@
           },
           "sizeX" : 8,
           "sizeY" : 8
+        },
+        "60fc67de-29d8-4093-9a36-4cba90ae0138" : {
+          "id" : "60fc67de-29d8-4093-9a36-4cba90ae0138",
+          "type" : "latest",
+          "typeFullFqn" : "system.action_button",
+          "config" : {
+            "title" : "Navigation",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "padding" : "0px",
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "1f4fe0c0-b78d-49ea-8872-93c75087239a",
+              "dataKeys" : [ ]
+            } ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "autoScale" : true,
+                "showLabel" : true,
+                "label" : "Zurück zur Übersicht",
+                "showIcon" : true,
+                "icon" : "arrow_back",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "actions" : {
+              "click" : [ {
+                "name" : "Navigate",
+                "icon" : "subdirectory_arrow_right",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "all",
+                "setEntityId" : false,
+                "openRightLayout" : false,
+                "stateEntityParamName" : null,
+                "id" : "cb2b6a8f-af8b-4ddf-8e8d-2646ee5349bd"
+              } ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 2
+        },
+        "dfa6ac4b-4958-436e-92b0-933f4074230c" : {
+          "id" : "dfa6ac4b-4958-436e-92b0-933f4074230c",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "config" : {
+            "title" : "Maschinendetails",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "1f4fe0c0-b78d-49ea-8872-93c75087239a",
+              "dataKeys" : [ {
+                "name" : "MachineType",
+                "type" : "timeseries",
+                "label" : "MachineType",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "SerialNumber",
+                "type" : "timeseries",
+                "label" : "SerialNumber",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "### ${entityLabel}\n**Maschinentyp:** ${MachineType} &nbsp;|&nbsp; **Seriennummer:** ${SerialNumber}",
+              "applyDefaultMarkdownStyle" : true
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 20,
+          "sizeY" : 2
+        },
+        "2859d2f1-e74a-4143-83d7-14b1fec58c9c" : {
+          "id" : "2859d2f1-e74a-4143-83d7-14b1fec58c9c",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.value_card",
+          "config" : {
+            "title" : "Tagesstückzahl (aktuell)",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "1f4fe0c0-b78d-49ea-8872-93c75087239a",
+              "dataKeys" : [ {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Tagesstückzahl",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "settings" : {
+              "layout" : "square",
+              "showLabel" : true,
+              "showIcon" : true,
+              "showDate" : false,
+              "icon" : "tag",
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              }
+            },
+            "units" : "Stk.",
+            "decimals" : 0,
+            "enableDataExport" : false
+          },
+          "sizeX" : 6,
+          "sizeY" : 6
+        },
+        "9062b150-9527-4e80-8326-6a7efaac0292" : {
+          "id" : "9062b150-9527-4e80-8326-6a7efaac0292",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "Tagesstückzahlen im Verlauf",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "1f4fe0c0-b78d-49ea-8872-93c75087239a",
+              "dataKeys" : [ {
+                "name" : "PieceCount_1d",
+                "type" : "timeseries",
+                "label" : "Tagesstückzahl",
+                "color" : "#2196f3",
+                "settings" : {
+                  "type" : "bar",
+                  "yAxisId" : "default"
+                },
+                "decimals" : 0
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "decimals" : 0
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 18,
+          "sizeY" : 6
         }
       },
       "states" : {
@@ -1037,7 +1285,32 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "60fc67de-29d8-4093-9a36-4cba90ae0138" : {
+                  "sizeX" : 4,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "dfa6ac4b-4958-436e-92b0-933f4074230c" : {
+                  "sizeX" : 20,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 4
+                },
+                "2859d2f1-e74a-4143-83d7-14b1fec58c9c" : {
+                  "sizeX" : 6,
+                  "sizeY" : 6,
+                  "row" : 2,
+                  "col" : 0
+                },
+                "9062b150-9527-4e80-8326-6a7efaac0292" : {
+                  "sizeX" : 18,
+                  "sizeY" : 6,
+                  "row" : 2,
+                  "col" : 6
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -1162,7 +1435,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682257261,
+        "aiUpdateTs" : 1790682265842,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
