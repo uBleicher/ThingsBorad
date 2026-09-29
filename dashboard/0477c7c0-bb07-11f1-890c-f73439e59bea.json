@@ -19,8 +19,8 @@
         "3daf03e1-9cef-6428-2481-7cd97b6db565" : {
           "typeFullFqn" : "system.time_series_chart",
           "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 5,
+          "sizeX" : 16,
+          "sizeY" : 8,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
@@ -457,9 +457,8 @@
             "main" : {
               "widgets" : {
                 "3daf03e1-9cef-6428-2481-7cd97b6db565" : {
-                  "sizeX" : 24,
-                  "sizeY" : 7,
-                  "mobileHeight" : null,
+                  "sizeX" : 16,
+                  "sizeY" : 8,
                   "row" : 0,
                   "col" : 0
                 }
@@ -640,7 +639,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1790682239398,
+        "aiUpdateTs" : 1790682243265,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
