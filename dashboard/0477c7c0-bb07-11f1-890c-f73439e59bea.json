@@ -648,7 +648,7 @@
                 "name" : "PieceCount",
                 "type" : "timeseries",
                 "label" : "PieceCount",
-                "color" : "#4caf50",
+                "color" : "#2196F3",
                 "settings" : {
                   "yAxisId" : "axis1",
                   "showInLegend" : true,
@@ -768,13 +768,21 @@
                   "order" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
                     "value" : null,
-                    "entityAlias" : null
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "axis1" : {
@@ -813,7 +821,7 @@
                   "order" : 1,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
+                    "value" : 0,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
