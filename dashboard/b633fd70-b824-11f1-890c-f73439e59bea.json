@@ -68,6 +68,12 @@
                 "color" : "#607d8b",
                 "settings" : { }
               }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Bezeichnung",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
                 "name" : "MachineType",
                 "type" : "timeseries",
                 "label" : "MachineType",
