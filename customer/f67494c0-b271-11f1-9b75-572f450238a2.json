@@ -13,7 +13,7 @@
     "country" : null,
     "customMenuId" : null,
     "customerId" : null,
-    "email" : null,
+    "email" : "ubleicher1@veit.de",
     "externalId" : null,
     "id" : {
       "entityType" : "CUSTOMER",
