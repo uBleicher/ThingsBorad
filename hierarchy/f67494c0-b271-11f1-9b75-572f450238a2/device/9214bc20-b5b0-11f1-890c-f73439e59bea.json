@@ -29,14 +29,14 @@
       "entityType" : "DEVICE",
       "id" : "9214bc20-b5b0-11f1-890c-f73439e59bea"
     },
-    "label" : "SteamMeter-01",
+    "label" : "SM50-SN202610070001",
     "name" : "Sc018c09gm01.br-automation.com",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
     },
     "softwareId" : null,
-    "type" : "VSM"
+    "type" : "veit_machine"
   },
   "credentials" : {
     "credentialsId" : "w7rbRNwjNHg2Iqw3OiaN",
@@ -50,35 +50,179 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1789990582873,
+      "lastUpdateTs" : 1791356387036,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1791285147469,
+      "longValue" : 1791285147468,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1790153873418,
-      "longValue" : 1790153872131,
+      "lastUpdateTs" : 1791376526417,
+      "longValue" : 1791376523557,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1790085582164,
-      "longValue" : 1790085582164,
+      "lastUpdateTs" : 1791365833927,
+      "longValue" : 1791365833927,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1790085576515,
-      "longValue" : 1790085576515,
+      "lastUpdateTs" : 1791365681506,
+      "longValue" : 1791365681506,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
   },
-  "calculatedFields" : [ ]
+  "calculatedFields" : [ {
+    "additionalInfo" : {
+      "aiGenerated" : true,
+      "aiGeneratedBy" : "AI Assistant",
+      "aiUpdated" : true,
+      "aiUpdateTs" : 1789539146433,
+      "aiUpdatedBy" : [ "AI Assistant" ]
+    },
+    "configuration" : {
+      "type" : "ENTITY_AGGREGATION",
+      "arguments" : {
+        "steamDelta" : {
+          "refEntityKey" : {
+            "key" : "steamConsumptionDelta",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "interval" : {
+        "type" : "DAY",
+        "tz" : "Europe/Berlin"
+      },
+      "metrics" : {
+        "steamConsumption_1d" : {
+          "function" : "SUM",
+          "input" : {
+            "type" : "key",
+            "key" : "steamDelta"
+          }
+        }
+      },
+      "output" : {
+        "type" : "TIME_SERIES",
+        "decimalsByDefault" : 2,
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 315360000
+        }
+      },
+      "produceIntermediateResult" : true,
+      "watermark" : null
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : null,
+    "name" : "SM50 - Steam consumption daily",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
+    },
+    "type" : "ENTITY_AGGREGATION"
+  }, {
+    "additionalInfo" : {
+      "aiGenerated" : true,
+      "aiGeneratedBy" : "AI Assistant",
+      "aiUpdated" : true,
+      "aiUpdateTs" : 1789539132363,
+      "aiUpdatedBy" : [ "AI Assistant" ]
+    },
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "steam_readings" : {
+          "limit" : 2,
+          "refEntityKey" : {
+            "key" : "TotalSteamConsumption",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 1800000
+        }
+      },
+      "expression" : "if (steam_readings.size < 2) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar prev = steam_readings.first();\nvar curr = steam_readings.last();\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"steamConsumptionDelta\": toFixed(delta, 4) };",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 7776000
+        }
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : null,
+    "name" : "SM50 - Steam consumption delta",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "additionalInfo" : {
+      "aiGenerated" : true,
+      "aiGeneratedBy" : "AI Assistant",
+      "aiUpdated" : true,
+      "aiUpdateTs" : 1789539132363,
+      "aiUpdatedBy" : [ "AI Assistant" ]
+    },
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "steam_readings" : {
+          "limit" : 2,
+          "refEntityKey" : {
+            "key" : "TotalSteamConsumption",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 1800000
+        }
+      },
+      "expression" : "if (steam_readings.size < 2) {\r\n    return { \"SteamConsumptionRate\": 0.0 };\r\n}\r\nvar n = steam_readings.size;\r\nvar p = steam_readings.values[n - 2];\r\nvar c = steam_readings.values[n - 1];\r\nvar prev = p.value;\r\nvar curr = c.value;\r\nif (isNaN(prev) || isNaN(curr)) {\r\n    return { \"SteamConsumptionRate\": 0.0 };\r\n}\r\nvar dtHours = (c.ts - p.ts) / 3600000.0;\r\nif (dtHours <= 0) {\r\n    return { \"SteamConsumptionRate\": 0.0 };\r\n}\r\nvar delta = 0.0;\r\nif (curr < prev) {\r\n    delta = (curr >= 0 ? curr : 0.0);\r\n} else {\r\n    delta = curr - prev;\r\n}\r\nreturn { \"SteamConsumptionRate\": toFixed(delta / dtHours, 4) };",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 7776000
+        }
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : null,
+    "name" : "SM50 - Steam consumption rate",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
+    },
+    "type" : "SCRIPT"
+  } ]
 }
