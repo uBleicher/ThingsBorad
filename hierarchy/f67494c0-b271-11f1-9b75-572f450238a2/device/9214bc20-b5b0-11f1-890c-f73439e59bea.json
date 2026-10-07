@@ -30,7 +30,7 @@
       "id" : "9214bc20-b5b0-11f1-890c-f73439e59bea"
     },
     "label" : "SM50-SN202610070001",
-    "name" : "Sc018c09gm01.br-automation.com",
+    "name" : "SM50-SN202610070001-Sc018c09gm01.br-automation.com",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
@@ -66,8 +66,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1791376526417,
-      "longValue" : 1791376523557,
+      "lastUpdateTs" : 1791376646421,
+      "longValue" : 1791376643617,
       "strValue" : null
     }, {
       "booleanValue" : null,
