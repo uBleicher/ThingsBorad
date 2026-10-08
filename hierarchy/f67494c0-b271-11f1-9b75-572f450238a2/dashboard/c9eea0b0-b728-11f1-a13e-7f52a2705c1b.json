@@ -2178,7 +2178,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Daily Steam Consumption",
+            "title" : "Weekly Steam Consumption",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -2465,12 +2465,12 @@
             "timewindow" : {
               "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 0,
+                "realtimeType" : 1,
                 "interval" : 3600000,
-                "timewindowMs" : 18000000
+                "quickInterval" : "CURRENT_WEEK_ISO_SO_FAR"
               },
               "aggregation" : {
-                "type" : "SUM"
+                "type" : "AVG"
               }
             },
             "displayTimewindow" : true,
@@ -2526,19 +2526,19 @@
                 "c304975a-3b11-4508-900e-058e4d061ddb" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 6,
+                  "row" : 12,
                   "col" : 0
                 },
                 "ca7c045f-6191-4beb-e444-008952a5d2b6" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 12,
+                  "row" : 18,
                   "col" : 0
                 },
                 "114c4e41-3bc6-b897-a1a2-764c74f99db0" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 18,
+                  "row" : 24,
                   "col" : 0
                 },
                 "b72526e6-5520-096a-902d-1de41052b9e2" : {
@@ -2550,8 +2550,8 @@
                 "71310f37-f3b9-93c4-4482-e923889dfcd3" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 17,
-                  "col" : 12
+                  "row" : 6,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
