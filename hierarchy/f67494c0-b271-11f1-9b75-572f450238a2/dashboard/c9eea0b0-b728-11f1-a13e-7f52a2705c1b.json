@@ -39,7 +39,13 @@
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "showConfigureWithAi" : true
       },
       "widgets" : {
         "b35ccb01-eff0-4a6b-aaad-c0a25378953f" : {
@@ -3093,7 +3099,12 @@
                 "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true
+                "autoFillHeight" : false,
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
