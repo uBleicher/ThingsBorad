@@ -465,7 +465,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Daily Steam Consumption",
+            "title" : "Daily - Steam Consumption",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -777,7 +777,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Monthly Steam Consumption",
+            "title" : "Monthly - Steam Consumption",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1090,7 +1090,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Yearly Steam Consumption",
+            "title" : "Yearly - Steam Consumption",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -2496,7 +2496,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Daily Steam Flow Rate Peak",
+            "title" : "Weekly - Steam Flow Rate Peak",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
