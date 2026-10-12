@@ -2669,7 +2669,7 @@
                 "name" : "rSteamFlowRateHourPeak3",
                 "type" : "timeseries",
                 "label" : "Steam Flow Rate Peak [10m] in kg/h",
-                "color" : "#f44336",
+                "color" : "#E89623",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
