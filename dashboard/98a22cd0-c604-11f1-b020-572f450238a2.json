@@ -102,6 +102,82 @@
                 },
                 "units" : "A",
                 "decimals" : 0
+              }, {
+                "name" : "CarriageMotorEncoderErrorElapsedTimeMax",
+                "type" : "timeseries",
+                "label" : "ErrorElapsedTime",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "axis1",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "line",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enablePointLabelBackground" : false,
+                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enableLabelBackground" : false,
+                    "labelBackground" : "rgba(255,255,255,0.56)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  }
+                },
+                "units" : "ms",
+                "decimals" : 0
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -240,10 +316,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
+                  "units" : "A",
                   "decimals" : 0,
                   "show" : true,
-                  "label" : "",
+                  "label" : "Current",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -276,12 +352,73 @@
                   "min" : {
                     "type" : "constant",
                     "value" : null,
-                    "entityAlias" : null
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
                     "value" : null,
-                    "entityAlias" : null
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  }
+                },
+                "axis1" : {
+                  "units" : "ms",
+                  "decimals" : 0,
+                  "show" : true,
+                  "label" : "Time",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "right",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "axis1",
+                  "order" : 1,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 }
               },
@@ -1270,7 +1407,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "88daf1f0-bd8b-11f1-890c-f73439e59bea",
+              "deviceId" : "6e737cd0-bb31-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "CarriageMotorCurrentInAmpereMax",
                 "type" : "timeseries",
@@ -1346,6 +1483,82 @@
                   }
                 },
                 "units" : "A",
+                "decimals" : 0
+              }, {
+                "name" : "CarriageMotorEncoderErrorElapsedTimeMax",
+                "type" : "timeseries",
+                "label" : "ErrorElapsedTime",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "axis1",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "line",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enablePointLabelBackground" : false,
+                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enableLabelBackground" : false,
+                    "labelBackground" : "rgba(255,255,255,0.56)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  }
+                },
+                "units" : "ms",
                 "decimals" : 0
               } ],
               "alarmFilterConfig" : {
@@ -1485,10 +1698,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
+                  "units" : "A",
                   "decimals" : 0,
                   "show" : true,
-                  "label" : "",
+                  "label" : "Current",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -1520,13 +1733,74 @@
                   "order" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 15,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  }
+                },
+                "axis1" : {
+                  "units" : "ms",
+                  "decimals" : 0,
+                  "show" : true,
+                  "label" : "Time",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "right",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "axis1",
+                  "order" : 1,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 1000,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 }
               },
@@ -1696,21 +1970,21 @@
                   "sizeY" : 5,
                   "mobileHeight" : null,
                   "row" : 5,
-                  "col" : 0
+                  "col" : 15
                 },
                 "b17a9e7f-bfa1-192d-65b0-4e958ff3a6a1" : {
                   "sizeX" : 15,
                   "sizeY" : 5,
                   "mobileHeight" : null,
-                  "row" : 10,
-                  "col" : 0
+                  "row" : 0,
+                  "col" : 15
                 },
                 "41aaf854-9e60-e777-158d-4bd259df8233" : {
                   "sizeX" : 15,
                   "sizeY" : 5,
                   "mobileHeight" : null,
-                  "row" : 0,
-                  "col" : 15
+                  "row" : 5,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
