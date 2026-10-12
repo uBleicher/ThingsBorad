@@ -2588,7 +2588,7 @@
                   }
                 },
                 "units" : "kg/h",
-                "decimals" : 2
+                "decimals" : 1
               }, {
                 "name" : "rSteamFlowRateHourPeak2",
                 "type" : "timeseries",
@@ -2664,7 +2664,7 @@
                   }
                 },
                 "units" : "kg/h",
-                "decimals" : 0
+                "decimals" : 1
               }, {
                 "name" : "rSteamFlowRateHourPeak3",
                 "type" : "timeseries",
@@ -2740,7 +2740,7 @@
                   }
                 },
                 "units" : "kg/h",
-                "decimals" : 0
+                "decimals" : 1
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
