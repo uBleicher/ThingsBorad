@@ -259,8 +259,8 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "UnscheduledDownTime_1d",
-                "label" : "Unscheduled Down Time",
+                "name" : "DownTimeUnscheduled_1d",
+                "label" : "Down Time Unscheduled - daily",
                 "type" : "timeseries",
                 "decimals" : 0,
                 "color" : "#F44336",
@@ -274,8 +274,8 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "ScheduledDownTime_1d",
-                "label" : "Scheduled Down Time",
+                "name" : "DownTimeScheduled_1d",
+                "label" : "Down Time Scheduled - daily",
                 "type" : "timeseries",
                 "decimals" : 0,
                 "color" : "#FF9800",
@@ -291,7 +291,7 @@
               }, {
                 "name" : "UpTime_1d",
                 "type" : "timeseries",
-                "label" : "Up Time",
+                "label" : "Up Time - daily",
                 "color" : "#4CAF50",
                 "settings" : { },
                 "decimals" : 0
