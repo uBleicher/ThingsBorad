@@ -1,0 +1,27 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "98a22cd0-c604-11f1-b020-572f450238a2"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "SF27 SchlittenMotor",
+    "name" : "SF27 SchlittenMotor",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
