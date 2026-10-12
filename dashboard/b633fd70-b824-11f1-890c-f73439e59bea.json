@@ -88,6 +88,12 @@
                 "settings" : { },
                 "decimals" : 0
               }, {
+                "name" : "SoftwareVersion",
+                "type" : "timeseries",
+                "label" : "SoftwareVersion",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
                 "name" : "active",
                 "type" : "attribute",
                 "label" : "active",
