@@ -2522,7 +2522,7 @@
                   "yAxisId" : "default",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
-                  "type" : "bar",
+                  "type" : "line",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
@@ -2598,7 +2598,7 @@
                   "yAxisId" : "default",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
-                  "type" : "bar",
+                  "type" : "line",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
@@ -2674,7 +2674,7 @@
                   "yAxisId" : "default",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
-                  "type" : "bar",
+                  "type" : "line",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
@@ -2749,8 +2749,6 @@
             } ],
             "useDashboardTimewindow" : false,
             "settings" : {
-              "dataZoom" : false,
-              "showLegend" : false,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -2784,14 +2782,6 @@
                 "lineColor" : "rgba(0, 0, 0, 0.54)",
                 "showSplitLines" : true,
                 "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
-              },
-              "thresholds" : [ ],
-              "stack" : false,
-              "grid" : {
-                "show" : false,
-                "backgroundColor" : null,
-                "borderWidth" : 1,
-                "borderColor" : "#ccc"
               },
               "yAxes" : {
                 "default" : {
@@ -2848,6 +2838,15 @@
                   }
                 }
               },
+              "thresholds" : [ ],
+              "dataZoom" : false,
+              "stack" : false,
+              "grid" : {
+                "show" : false,
+                "backgroundColor" : null,
+                "borderWidth" : 1,
+                "borderColor" : "#ccc"
+              },
               "xAxis" : {
                 "show" : true,
                 "label" : "",
@@ -2892,6 +2891,7 @@
                   "absoluteWidth" : 1000
                 }
               },
+              "showLegend" : false,
               "legendColumnTitleFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -2950,6 +2950,7 @@
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueFormatter" : null,
               "tooltipShowDate" : true,
               "tooltipDateFormat" : {
                 "format" : null,
