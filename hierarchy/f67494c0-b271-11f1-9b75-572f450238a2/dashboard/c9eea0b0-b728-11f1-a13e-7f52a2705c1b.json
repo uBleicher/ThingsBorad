@@ -3036,7 +3036,6 @@
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
                   "type" : "bar",
                   "lineSettings" : {
                     "showLine" : true,
@@ -3100,7 +3099,9 @@
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
                     "color" : ""
-                  }
+                  },
+                  "dataHiddenByDefault" : false,
+                  "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
                 "decimals" : 1,
@@ -3116,7 +3117,6 @@
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
                   "type" : "bar",
                   "lineSettings" : {
                     "showLine" : true,
@@ -3180,10 +3180,16 @@
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
                     "color" : ""
-                  }
+                  },
+                  "dataHiddenByDefault" : false,
+                  "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
-                "decimals" : 1
+                "decimals" : 1,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "rSteamFlowRateHourPeak3",
                 "type" : "timeseries",
@@ -3192,7 +3198,6 @@
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
                   "type" : "bar",
                   "lineSettings" : {
                     "showLine" : true,
@@ -3256,10 +3261,16 @@
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
                     "color" : ""
-                  }
+                  },
+                  "dataHiddenByDefault" : false,
+                  "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
-                "decimals" : 1
+                "decimals" : 1,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -3513,7 +3524,7 @@
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
