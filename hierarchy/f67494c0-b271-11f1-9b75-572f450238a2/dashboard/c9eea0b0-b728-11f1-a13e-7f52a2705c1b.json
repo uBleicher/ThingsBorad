@@ -3567,11 +3567,11 @@
             },
             "enableDataExport" : true,
             "timewindow" : {
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "interval" : 1800000,
-                "quickInterval" : "CURRENT_WEEK_ISO"
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "quickInterval" : "CURRENT_WEEK_ISO",
+                "interval" : 1800000
               },
               "aggregation" : {
                 "type" : "AVG"
