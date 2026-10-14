@@ -779,7 +779,7 @@
           "config" : {
             "title" : "Monthly - Steam Consumption",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -817,8 +817,6 @@
             } ],
             "useDashboardTimewindow" : false,
             "settings" : {
-              "dataZoom" : false,
-              "showLegend" : false,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -852,14 +850,6 @@
                 "lineColor" : "rgba(0, 0, 0, 0.54)",
                 "showSplitLines" : true,
                 "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
-              },
-              "thresholds" : [ ],
-              "stack" : false,
-              "grid" : {
-                "show" : false,
-                "backgroundColor" : null,
-                "borderWidth" : 1,
-                "borderColor" : "#ccc"
               },
               "yAxes" : {
                 "default" : {
@@ -916,6 +906,15 @@
                   }
                 }
               },
+              "thresholds" : [ ],
+              "dataZoom" : false,
+              "stack" : false,
+              "grid" : {
+                "show" : false,
+                "backgroundColor" : null,
+                "borderWidth" : 1,
+                "borderColor" : "#ccc"
+              },
               "xAxis" : {
                 "show" : true,
                 "label" : "",
@@ -960,6 +959,7 @@
                   "absoluteWidth" : 1000
                 }
               },
+              "showLegend" : true,
               "legendColumnTitleFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -988,15 +988,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -1018,6 +1016,7 @@
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueFormatter" : null,
               "tooltipShowDate" : true,
               "tooltipDateFormat" : {
                 "format" : null,
@@ -1131,7 +1130,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : false,
+              "showLegend" : true,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -1301,15 +1300,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -1444,7 +1441,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : false,
+              "showLegend" : true,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -1614,15 +1611,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
