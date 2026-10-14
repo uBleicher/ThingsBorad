@@ -505,7 +505,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : false,
+              "showLegend" : true,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -675,15 +675,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -2219,7 +2217,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : false,
+              "showLegend" : true,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -2389,15 +2387,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
