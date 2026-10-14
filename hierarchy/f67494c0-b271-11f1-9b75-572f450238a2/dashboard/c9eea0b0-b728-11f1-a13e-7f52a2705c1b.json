@@ -505,7 +505,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : true,
+              "showLegend" : false,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -679,8 +679,8 @@
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : false,
-                "showTotal" : true,
+                "showAvg" : true,
+                "showTotal" : false,
                 "showLatest" : false
               },
               "showTooltip" : true,
@@ -2217,7 +2217,7 @@
             "useDashboardTimewindow" : false,
             "settings" : {
               "dataZoom" : false,
-              "showLegend" : true,
+              "showLegend" : false,
               "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
@@ -2391,8 +2391,8 @@
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : false,
-                "showTotal" : true,
+                "showAvg" : true,
+                "showTotal" : false,
                 "showLatest" : false
               },
               "showTooltip" : true,
