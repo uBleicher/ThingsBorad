@@ -259,7 +259,7 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "DownTimeUnscheduled_1d",
+                "name" : "DownTimeUnscheduledDaily",
                 "label" : "Down Time Unscheduled - daily",
                 "type" : "timeseries",
                 "decimals" : 0,
@@ -274,7 +274,7 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "DownTimeScheduled_1d",
+                "name" : "DownTimeScheduledDaily",
                 "label" : "Down Time Scheduled - daily",
                 "type" : "timeseries",
                 "decimals" : 0,
@@ -289,12 +289,17 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "UpTime_1d",
+                "name" : "UpTimeDaily",
                 "type" : "timeseries",
                 "label" : "Up Time - daily",
                 "color" : "#4CAF50",
                 "settings" : { },
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
