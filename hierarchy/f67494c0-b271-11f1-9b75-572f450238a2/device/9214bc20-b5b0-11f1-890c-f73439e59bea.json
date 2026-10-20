@@ -30,7 +30,7 @@
       "id" : "9214bc20-b5b0-11f1-890c-f73439e59bea"
     },
     "label" : "SM50-SN202610070001",
-    "name" : "Sc018c09gm01.br-automation.com",
+    "name" : "SM50-SN202610070001-Sc018c09gm01.br-automation.com",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
@@ -50,7 +50,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1791356387036,
+      "lastUpdateTs" : 1792078042587,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -58,32 +58,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1791285147469,
-      "longValue" : 1791285147468,
+      "lastUpdateTs" : 1792076162395,
+      "longValue" : 1792076162394,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1791468989427,
-      "longValue" : 1791468987265,
+      "lastUpdateTs" : 1792510054626,
+      "longValue" : 1792510052496,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1791463517390,
-      "longValue" : 1791463517390,
+      "lastUpdateTs" : 1792078042587,
+      "longValue" : 1792078042587,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1791463507270,
-      "longValue" : 1791463507270,
+      "lastUpdateTs" : 1792075540771,
+      "longValue" : 1792075540771,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
@@ -98,8 +98,21 @@
     },
     "configuration" : {
       "type" : "ENTITY_AGGREGATION",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "decimalsByDefault" : 2,
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 315360000
+        }
+      },
       "arguments" : {
-        "steamDelta" : {
+        "steamConsumptionDelta" : {
+          "defaultValue" : "",
           "refEntityKey" : {
             "key" : "steamConsumptionDelta",
             "type" : "TS_LATEST"
@@ -115,20 +128,8 @@
           "function" : "SUM",
           "input" : {
             "type" : "key",
-            "key" : "steamDelta"
+            "key" : "steamConsumptionDelta"
           }
-        }
-      },
-      "output" : {
-        "type" : "TIME_SERIES",
-        "decimalsByDefault" : 2,
-        "strategy" : {
-          "type" : "IMMEDIATE",
-          "processCfs" : true,
-          "saveLatest" : true,
-          "saveTimeSeries" : true,
-          "sendWsUpdate" : true,
-          "ttl" : 315360000
         }
       },
       "produceIntermediateResult" : true,
@@ -152,17 +153,6 @@
     },
     "configuration" : {
       "type" : "SCRIPT",
-      "arguments" : {
-        "steam_readings" : {
-          "limit" : 2,
-          "refEntityKey" : {
-            "key" : "TotalSteamConsumption",
-            "type" : "TS_ROLLING"
-          },
-          "timeWindow" : 1800000
-        }
-      },
-      "expression" : "if (steam_readings.size < 2) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar prev = steam_readings.first();\nvar curr = steam_readings.last();\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"steamConsumptionDelta\": toFixed(delta, 4) };",
       "output" : {
         "type" : "TIME_SERIES",
         "strategy" : {
@@ -173,7 +163,18 @@
           "sendWsUpdate" : true,
           "ttl" : 7776000
         }
-      }
+      },
+      "arguments" : {
+        "SteamConsumption_readings" : {
+          "limit" : 2,
+          "refEntityKey" : {
+            "key" : "TotalSteamConsumption",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 1800000
+        }
+      },
+      "expression" : "if (SteamConsumption_readings.size < 2) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar prev = SteamConsumption_readings.first();\nvar curr = SteamConsumption_readings.last();\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"steamConsumptionDelta\": toFixed(delta, 4) };"
     },
     "configurationVersion" : 0,
     "debugSettings" : null,
@@ -193,17 +194,6 @@
     },
     "configuration" : {
       "type" : "SCRIPT",
-      "arguments" : {
-        "steam_readings" : {
-          "limit" : 2,
-          "refEntityKey" : {
-            "key" : "TotalSteamConsumption",
-            "type" : "TS_ROLLING"
-          },
-          "timeWindow" : 1800000
-        }
-      },
-      "expression" : "if (steam_readings.size < 2) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\n\nvar p = null;\nvar c = null;\nvar readingValue = 0.0;\n\nforeach (reading : steam_readings.values) {\n    readingValue = reading.value;\n    if (!isNaN(readingValue) && readingValue != 0) {\n        p = c;\n        c = reading;\n    }\n}\n\nif (p == null || c == null) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\n\nvar prev = p.value;\nvar curr = c.value;\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\nvar dtHours = (c.ts - p.ts) / 3600000.0;\nif (dtHours <= 0) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"SteamConsumptionRate\": toFixed(delta / dtHours, 4) };",
       "output" : {
         "type" : "TIME_SERIES",
         "strategy" : {
@@ -214,7 +204,18 @@
           "sendWsUpdate" : true,
           "ttl" : 7776000
         }
-      }
+      },
+      "arguments" : {
+        "steam_readings" : {
+          "limit" : 2,
+          "refEntityKey" : {
+            "key" : "TotalSteamConsumption",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 1800000
+        }
+      },
+      "expression" : "if (steam_readings.size < 2) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\n\nvar p = null;\nvar c = null;\nvar readingValue = 0.0;\n\nforeach (reading : steam_readings.values) {\n    readingValue = reading.value;\n    if (!isNaN(readingValue) && readingValue != 0) {\n        p = c;\n        c = reading;\n    }\n}\n\nif (p == null || c == null) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\n\nvar prev = p.value;\nvar curr = c.value;\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\nvar dtHours = (c.ts - p.ts) / 3600000.0;\nif (dtHours <= 0) {\n    return { \"SteamConsumptionRate\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"SteamConsumptionRate\": toFixed(delta / dtHours, 4) };"
     },
     "configurationVersion" : 0,
     "debugSettings" : null,
