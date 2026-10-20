@@ -143,8 +143,8 @@
           "row" : 0,
           "col" : 0,
           "config" : {
-            "configMode" : "basic",
-            "title" : "Productivity (5:30h - 15:30h)",
+            "configMode" : "advanced",
+            "title" : "Productivity (5:30h - 16:30h)",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -315,7 +315,15 @@
               "IMPERIAL" : "s",
               "HYBRID" : "h"
             },
-            "decimals" : 2
+            "decimals" : 2,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "id" : "ce6d3918-b1e2-45e5-8e3c-38d557d1ed34",
           "typeFullFqn" : "system.horizontal_doughnut",
