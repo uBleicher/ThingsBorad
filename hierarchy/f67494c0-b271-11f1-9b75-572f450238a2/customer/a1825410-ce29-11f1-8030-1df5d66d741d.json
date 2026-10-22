@@ -1,0 +1,44 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a1825410-ce29-11f1-8030-1df5d66d741d"
+    },
+    "name" : "veit-SM50",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "veit-SM50",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
