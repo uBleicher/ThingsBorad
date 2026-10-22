@@ -1865,15 +1865,13 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "right",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
-                "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showTotal" : true,
+                "showLatest" : false
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
