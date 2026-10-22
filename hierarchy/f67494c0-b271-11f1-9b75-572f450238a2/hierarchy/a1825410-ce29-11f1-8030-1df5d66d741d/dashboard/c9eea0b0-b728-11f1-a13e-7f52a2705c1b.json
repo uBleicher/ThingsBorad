@@ -1602,9 +1602,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "UnscheduledDownTime_1d",
+                "name" : "DownTimeUnscheduledDaily",
                 "type" : "timeseries",
-                "label" : "UnscheduledDownTime",
+                "label" : "DownTimeUnscheduled",
                 "color" : "#f44336",
                 "settings" : {
                   "yAxisId" : "default",
@@ -1676,7 +1676,11 @@
                   }
                 },
                 "decimals" : 2,
-                "units" : "h"
+                "units" : "h",
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
