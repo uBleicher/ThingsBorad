@@ -19,12 +19,12 @@
       "entityType" : "CUSTOMER",
       "id" : "f67494c0-b271-11f1-9b75-572f450238a2"
     },
-    "name" : "Veit",
+    "name" : "veit",
     "ownerId" : null,
     "parentCustomerId" : null,
     "phone" : null,
     "state" : null,
-    "title" : "Veit",
+    "title" : "veit",
     "zip" : null
   },
   "relations" : [ ],
