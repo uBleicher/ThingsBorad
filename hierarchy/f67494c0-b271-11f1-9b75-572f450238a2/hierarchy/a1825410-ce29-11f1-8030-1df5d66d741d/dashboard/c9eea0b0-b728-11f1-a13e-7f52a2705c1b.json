@@ -175,7 +175,7 @@
                 "label" : "Up Time - daily",
                 "color" : "#4CAF50",
                 "settings" : { },
-                "decimals" : 0,
+                "decimals" : 2,
                 "aggregationType" : "NONE",
                 "units" : null,
                 "funcBody" : null,
@@ -185,7 +185,7 @@
                 "name" : "DownTimeScheduledDaily",
                 "label" : "Down Time Scheduled - daily",
                 "type" : "timeseries",
-                "decimals" : 0,
+                "decimals" : 2,
                 "color" : "#FF9800",
                 "settings" : {
                   "yAxisId" : null,
@@ -200,7 +200,7 @@
                 "name" : "DownTimeUnscheduledDaily",
                 "label" : "Down Time Unscheduled - daily",
                 "type" : "timeseries",
-                "decimals" : 0,
+                "decimals" : 2,
                 "color" : "#F44336",
                 "settings" : {
                   "yAxisId" : null,
