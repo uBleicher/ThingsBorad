@@ -170,15 +170,12 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "DownTimeUnscheduledDaily",
-                "label" : "Down Time Unscheduled - daily",
+                "name" : "UpTimeDaily",
                 "type" : "timeseries",
+                "label" : "Up Time - daily",
+                "color" : "#4CAF50",
+                "settings" : { },
                 "decimals" : 0,
-                "color" : "#F44336",
-                "settings" : {
-                  "yAxisId" : null,
-                  "showLegend" : true
-                },
                 "aggregationType" : "NONE",
                 "units" : null,
                 "funcBody" : null,
@@ -200,12 +197,15 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "UpTimeDaily",
+                "name" : "DownTimeUnscheduledDaily",
+                "label" : "Down Time Unscheduled - daily",
                 "type" : "timeseries",
-                "label" : "Up Time - daily",
-                "color" : "#4CAF50",
-                "settings" : { },
                 "decimals" : 0,
+                "color" : "#F44336",
+                "settings" : {
+                  "yAxisId" : null,
+                  "showLegend" : true
+                },
                 "aggregationType" : "NONE",
                 "units" : null,
                 "funcBody" : null,
