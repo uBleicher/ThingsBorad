@@ -21,9 +21,9 @@
     "mobileOrder" : null,
     "configuration" : {
       "timewindow" : {
-        "selectedTab" : 0,
-        "realtime" : {
-          "realtimeType" : 1,
+        "selectedTab" : 1,
+        "history" : {
+          "historyType" : 2,
           "quickInterval" : "CURRENT_DAY"
         },
         "aggregation" : {
