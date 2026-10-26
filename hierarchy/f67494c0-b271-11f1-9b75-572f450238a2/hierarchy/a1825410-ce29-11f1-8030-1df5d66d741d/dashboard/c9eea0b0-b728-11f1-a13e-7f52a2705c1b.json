@@ -1865,13 +1865,15 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : true,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -1946,11 +1948,11 @@
             "enableFullscreen" : true,
             "actions" : { },
             "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 0,
-                "timewindowMs" : 604800000,
-                "interval" : 86400000
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "interval" : 86400000,
+                "quickInterval" : "CURRENT_WEEK_ISO"
               },
               "aggregation" : {
                 "type" : "MAX"
