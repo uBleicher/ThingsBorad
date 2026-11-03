@@ -1665,9 +1665,9 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Steam consumption - monthly",
+            "title" : "Steam consumption - current month",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -1969,7 +1969,15 @@
             "titleIcon" : null,
             "iconColor" : null,
             "enableFullscreen" : true,
-            "actions" : { }
+            "actions" : { },
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 12,
           "sizeY" : 6
@@ -3178,9 +3186,9 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Steam consumption - monthly",
+            "title" : "Steam consumption - current week",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -3482,7 +3490,15 @@
             "titleIcon" : null,
             "iconColor" : null,
             "enableFullscreen" : true,
-            "actions" : { }
+            "actions" : { },
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 12,
           "sizeY" : 6
