@@ -534,7 +534,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 1,
-                "quickInterval" : "CURRENT_DAY_SO_FAR"
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "NONE",
