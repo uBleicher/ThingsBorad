@@ -245,7 +245,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Daily - Steam Consumption",
+            "title" : "Steam consumption - daily",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -455,13 +455,15 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : true,
                 "showTotal" : false,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -524,7 +526,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "12px",
+              "dataZoomUpdateTimewindow" : false
             },
             "enableDataExport" : true,
             "timewindow" : {
@@ -573,9 +576,9 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "steamConsumption_1d",
+                "name" : "SteamConsumptionDaily",
                 "type" : "timeseries",
-                "label" : "Total Steam Consumption",
+                "label" : "Steam Consumption - dialy",
                 "color" : "#048AD3",
                 "settings" : {
                   "type" : "bar",
@@ -847,9 +850,9 @@
             "enableFullscreen" : true,
             "actions" : { },
             "timewindow" : {
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
                 "quickInterval" : "CURRENT_MONTH"
               },
               "aggregation" : {
@@ -1968,7 +1971,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Weekly Steam Consumption",
+            "title" : "Steam consumption - monthly",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -2259,7 +2262,7 @@
               "realtime" : {
                 "realtimeType" : 1,
                 "interval" : 86400000,
-                "quickInterval" : "CURRENT_WEEK_ISO"
+                "quickInterval" : "CURRENT_MONTH"
               },
               "aggregation" : {
                 "type" : "MAX"
@@ -3305,7 +3308,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Weekly - Steam Flow Rate Peak",
+            "title" : "Steam flow rate (peak) - weekly",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
