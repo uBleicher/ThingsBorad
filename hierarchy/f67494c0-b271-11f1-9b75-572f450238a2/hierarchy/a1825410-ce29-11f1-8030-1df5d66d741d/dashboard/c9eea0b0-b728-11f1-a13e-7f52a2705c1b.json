@@ -55,7 +55,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "advanced",
-            "title" : "Productivity (5:30h - 16:30h)",
+            "title" : "Productivity - current day from 5:30h to 16:30h",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -245,7 +245,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Steam consumption - daily",
+            "title" : "Steam consumption - current day",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -558,7 +558,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Yearly - Steam Consumption",
+            "title" : "Steam consumption - current year",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -769,13 +769,15 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : true,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -838,7 +840,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "12px",
+              "dataZoomUpdateTimewindow" : false
             },
             "enableDataExport" : true,
             "titleColor" : null,
@@ -869,7 +872,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Total Steam Consumption",
+            "title" : "Total steam consumption",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -887,7 +890,7 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "steamConsumption_1d",
+                "name" : "SteamConsumptionDaily",
                 "type" : "timeseries",
                 "label" : "Total Steam Consumption",
                 "color" : "#048AD3",
@@ -1080,13 +1083,15 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : true,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
@@ -1149,7 +1154,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "12px",
+              "dataZoomUpdateTimewindow" : false
             },
             "enableDataExport" : true,
             "titleColor" : null,
@@ -1180,7 +1186,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "",
+            "title" : "Productivity - current week",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1973,7 +1979,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Weekly - Steam Flow Rate Peak",
+            "title" : "Steam flow rate (peak) - current week",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -2469,7 +2475,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "12px",
+              "dataZoomUpdateTimewindow" : false
             },
             "enableDataExport" : true,
             "timewindow" : {
@@ -2996,7 +3003,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Steam flow rate (peak) - weekly",
+            "title" : "Steam flow rate (peak) - current week",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
