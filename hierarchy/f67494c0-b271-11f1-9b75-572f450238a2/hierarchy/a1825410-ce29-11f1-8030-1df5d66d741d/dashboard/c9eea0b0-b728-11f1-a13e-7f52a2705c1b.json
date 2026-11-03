@@ -2258,7 +2258,7 @@
               "realtime" : {
                 "realtimeType" : 1,
                 "interval" : 86400000,
-                "quickInterval" : "CURRENT_WEEK_ISO_SO_FAR"
+                "quickInterval" : "CURRENT_WEEK_ISO"
               },
               "aggregation" : {
                 "type" : "MAX"
