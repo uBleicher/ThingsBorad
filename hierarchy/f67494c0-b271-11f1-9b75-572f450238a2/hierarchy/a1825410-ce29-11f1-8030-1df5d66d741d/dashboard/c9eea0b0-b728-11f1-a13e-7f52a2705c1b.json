@@ -353,7 +353,7 @@
                   "showInLegend" : true,
                   "type" : "line",
                   "lineSettings" : {
-                    "showLine" : false,
+                    "showLine" : true,
                     "step" : false,
                     "stepType" : "start",
                     "smooth" : false,
@@ -415,7 +415,7 @@
                     "comparisonValuesLabel" : "",
                     "color" : ""
                   },
-                  "dataHiddenByDefault" : false,
+                  "dataHiddenByDefault" : true,
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg",
