@@ -850,7 +850,7 @@
               "selectedTab" : 1,
               "history" : {
                 "historyType" : 2,
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+                "quickInterval" : "CURRENT_MONTH"
               },
               "aggregation" : {
                 "type" : "NONE",
