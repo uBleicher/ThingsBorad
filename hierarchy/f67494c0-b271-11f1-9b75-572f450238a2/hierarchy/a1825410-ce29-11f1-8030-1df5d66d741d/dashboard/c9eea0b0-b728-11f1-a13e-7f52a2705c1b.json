@@ -346,7 +346,7 @@
               }, {
                 "name" : "SteamConsumptionDaily",
                 "type" : "timeseries",
-                "label" : "SteamConsumptionDaily",
+                "label" : "Steam consumption - current day",
                 "color" : "#4caf50",
                 "settings" : {
                   "yAxisId" : "axis1",
@@ -570,12 +570,20 @@
                   "min" : {
                     "type" : "constant",
                     "value" : null,
-                    "entityAlias" : null
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
                     "value" : null,
-                    "entityAlias" : null
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 }
               },
