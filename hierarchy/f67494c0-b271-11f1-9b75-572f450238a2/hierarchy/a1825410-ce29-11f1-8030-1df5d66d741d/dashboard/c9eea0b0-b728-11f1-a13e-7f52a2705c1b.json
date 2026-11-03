@@ -347,7 +347,7 @@
                 "name" : "SteamConsumptionDaily",
                 "type" : "timeseries",
                 "label" : "Steam consumption - current day",
-                "color" : "#4caf50",
+                "color" : "#048AD3",
                 "settings" : {
                   "yAxisId" : "axis1",
                   "showInLegend" : true,
