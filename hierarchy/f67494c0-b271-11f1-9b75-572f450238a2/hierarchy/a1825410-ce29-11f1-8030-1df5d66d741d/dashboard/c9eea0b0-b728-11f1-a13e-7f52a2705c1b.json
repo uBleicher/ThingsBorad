@@ -1988,10 +1988,11 @@
               "dataKeys" : [ {
                 "name" : "SteamConsumptionDaily",
                 "type" : "timeseries",
-                "label" : "Steam Consumption Daily kg",
+                "label" : "Steam Consumption [kg]",
                 "color" : "#048AD3",
                 "settings" : {
-                  "type" : "bar"
+                  "type" : "bar",
+                  "yAxisId" : "default"
                 },
                 "decimals" : 2,
                 "aggregationType" : null,
@@ -2178,13 +2179,15 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : true,
-                "showLatest" : false
+                "showLatest" : false,
+                "valueFormat" : null
               },
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
