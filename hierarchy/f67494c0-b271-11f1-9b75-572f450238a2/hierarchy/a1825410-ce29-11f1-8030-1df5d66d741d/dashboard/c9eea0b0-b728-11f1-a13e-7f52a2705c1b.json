@@ -533,7 +533,7 @@
                 "axis1" : {
                   "units" : null,
                   "decimals" : 0,
-                  "show" : false,
+                  "show" : true,
                   "label" : "kg-axis",
                   "labelFont" : {
                     "family" : "Roboto",
@@ -544,7 +544,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
-                  "position" : "left",
+                  "position" : "right",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
