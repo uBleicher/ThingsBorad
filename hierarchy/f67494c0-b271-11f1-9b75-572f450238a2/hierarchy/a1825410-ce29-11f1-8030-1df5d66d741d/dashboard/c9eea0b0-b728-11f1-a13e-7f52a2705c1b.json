@@ -419,7 +419,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg",
-                "decimals" : 1,
+                "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
