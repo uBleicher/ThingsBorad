@@ -3363,7 +3363,7 @@
                 "settings" : { },
                 "aggregationType" : "NONE",
                 "units" : "bar",
-                "decimals" : 1,
+                "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -3391,6 +3391,25 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "device",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "dataKeys" : [ {
+                "name" : "TempCPU",
+                "type" : "timeseries",
+                "label" : "TempCPU",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "TempENV",
+                "type" : "timeseries",
+                "label" : "TempENV",
+                "color" : "#03a9f4",
+                "settings" : { }
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
