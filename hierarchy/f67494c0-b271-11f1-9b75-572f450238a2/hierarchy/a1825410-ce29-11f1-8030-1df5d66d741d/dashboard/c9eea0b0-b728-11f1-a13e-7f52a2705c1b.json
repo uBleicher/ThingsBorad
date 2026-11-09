@@ -3287,39 +3287,58 @@
           "config" : {
             "datasources" : [ {
               "type" : "device",
-              "name" : "",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "MachineType",
                 "type" : "timeseries",
-                "label" : "MachineType",
-                "color" : "#4caf50",
+                "label" : "MachineType 2",
+                "color" : "#ffeb3b",
                 "settings" : { }
               }, {
                 "name" : "SerialNumber",
                 "type" : "timeseries",
-                "label" : "SerialNumber",
-                "color" : "#f44336",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "label" : "SerialNumber 2",
+                "color" : "#03a9f4",
+                "settings" : { }
               }, {
                 "name" : "MachineConditionStateText",
                 "type" : "timeseries",
-                "label" : "MachineConditionState",
-                "color" : "#ffc107",
+                "label" : "MachineConditionStateText",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "TempCPU",
+                "type" : "timeseries",
+                "label" : "TempCPU",
+                "color" : "#673ab7",
                 "settings" : { },
                 "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
+                "units" : "°C",
+                "decimals" : 1,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "TempENV",
+                "type" : "timeseries",
+                "label" : "TempENV",
+                "color" : "#cddc39",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "°C",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "dataKeys" : [ {
                 "name" : "TotalSteamConsumption",
                 "type" : "timeseries",
                 "label" : "TotalSteamConsumption",
@@ -3391,25 +3410,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "device",
-              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
-              "dataKeys" : [ {
-                "name" : "TempCPU",
-                "type" : "timeseries",
-                "label" : "TempCPU",
-                "color" : "#ffeb3b",
-                "settings" : { }
-              }, {
-                "name" : "TempENV",
-                "type" : "timeseries",
-                "label" : "TempENV",
-                "color" : "#03a9f4",
-                "settings" : { }
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
