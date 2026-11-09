@@ -3332,6 +3332,42 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "CurrSteamFlowRate",
+                "type" : "timeseries",
+                "label" : "CurrSteamFlowRate",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "kg/h",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "CurrSteamTemperature",
+                "type" : "timeseries",
+                "label" : "CurrSteamTemperature",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "°C",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "CurrSteamPressure",
+                "type" : "timeseries",
+                "label" : "CurrSteamPressure",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "bar",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "TempCPU",
                 "type" : "timeseries",
                 "label" : "Temperature CPU",
