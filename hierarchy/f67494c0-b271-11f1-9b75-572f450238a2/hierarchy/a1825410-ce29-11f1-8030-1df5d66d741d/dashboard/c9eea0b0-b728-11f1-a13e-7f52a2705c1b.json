@@ -419,7 +419,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg",
-                "decimals" : 2,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -788,7 +788,7 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 1,
+                "decimals" : 0,
                 "units" : "kg",
                 "aggregationType" : null,
                 "funcBody" : null,
@@ -1102,7 +1102,7 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 1,
+                "decimals" : 0,
                 "units" : "kg",
                 "aggregationType" : null,
                 "funcBody" : null,
@@ -1895,7 +1895,7 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 2,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "units" : "kg",
                 "funcBody" : null,
@@ -2800,7 +2800,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
-                "decimals" : 1,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -2881,7 +2881,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
-                "decimals" : 1,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -2962,7 +2962,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "kg/h",
-                "decimals" : 1,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -3416,7 +3416,7 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 2,
+                "decimals" : 0,
                 "aggregationType" : null,
                 "units" : "kg",
                 "funcBody" : null,
