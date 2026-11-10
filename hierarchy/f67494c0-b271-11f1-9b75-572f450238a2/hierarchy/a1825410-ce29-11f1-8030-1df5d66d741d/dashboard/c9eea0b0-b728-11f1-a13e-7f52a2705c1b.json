@@ -4386,7 +4386,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 1,
-                "quickInterval" : "CURRENT_WEEK_ISO"
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "NONE",
