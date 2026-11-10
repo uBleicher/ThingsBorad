@@ -3755,7 +3755,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Steam flow rate (peak) - current week",
+            "title" : "Current values - current day",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -3936,7 +3936,7 @@
               }, {
                 "name" : "CurrSteamTemperature",
                 "type" : "timeseries",
-                "label" : "Steam Flow Rate Peak [10m] in kg/h",
+                "label" : "Steam Temperature",
                 "color" : "#E89623",
                 "settings" : {
                   "yAxisId" : "axis2",
@@ -4427,7 +4427,7 @@
                 "114c4e41-3bc6-b897-a1a2-764c74f99db0" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 22,
+                  "row" : 28,
                   "col" : 12
                 },
                 "b72526e6-5520-096a-902d-1de41052b9e2" : {
@@ -4445,7 +4445,7 @@
                 "204f4b09-30a7-33c0-50bd-6661cffcd23f" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 16,
+                  "row" : 22,
                   "col" : 12
                 },
                 "9785f98b-94bc-34bb-3c0e-b356037a5e25" : {
@@ -4470,8 +4470,8 @@
                 "4a0eaa6b-1f2c-c204-d3f0-a56a0f13d58a" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 28,
-                  "col" : 0
+                  "row" : 16,
+                  "col" : 12
                 }
               },
               "gridSettings" : {
