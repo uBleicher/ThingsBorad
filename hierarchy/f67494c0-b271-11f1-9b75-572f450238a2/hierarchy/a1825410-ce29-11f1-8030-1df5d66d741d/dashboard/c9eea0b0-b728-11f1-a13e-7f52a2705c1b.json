@@ -4061,7 +4061,7 @@
                   "units" : "kg/h",
                   "decimals" : 0,
                   "show" : true,
-                  "label" : "",
+                  "label" : "Flow rate",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -4108,13 +4108,16 @@
                     "entityAlias" : null,
                     "entityKey" : null,
                     "entityKeyType" : null
-                  }
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 },
                 "axis1" : {
                   "units" : "bar",
                   "decimals" : 0,
                   "show" : true,
-                  "label" : "",
+                  "label" : "Pressure",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -4167,7 +4170,7 @@
                   "units" : "°C",
                   "decimals" : 0,
                   "show" : true,
-                  "label" : "",
+                  "label" : "Temperature",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
