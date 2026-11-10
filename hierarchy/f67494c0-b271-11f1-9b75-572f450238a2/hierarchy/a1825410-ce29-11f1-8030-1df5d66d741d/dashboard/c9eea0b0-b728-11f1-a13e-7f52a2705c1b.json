@@ -4375,25 +4375,25 @@
               "dataZoomUpdateTimewindow" : false
             },
             "enableDataExport" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 25000
-              }
-            },
-            "displayTimewindow" : true,
             "titleColor" : null,
             "showTitleIcon" : null,
             "iconSize" : "0px",
             "titleIcon" : null,
             "iconColor" : null,
             "enableFullscreen" : true,
-            "actions" : { }
+            "actions" : { },
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 300000,
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "displayTimewindow" : true
           },
           "sizeX" : 12,
           "sizeY" : 6
