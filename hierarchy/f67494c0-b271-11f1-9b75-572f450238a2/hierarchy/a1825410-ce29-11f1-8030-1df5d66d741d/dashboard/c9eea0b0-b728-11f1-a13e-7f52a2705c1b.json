@@ -4070,7 +4070,7 @@
                     "weight" : "600",
                     "lineHeight" : "1"
                   },
-                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "labelColor" : "rgb(4, 138, 211)",
                   "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
@@ -4126,7 +4126,7 @@
                     "weight" : "600",
                     "lineHeight" : "1"
                   },
-                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "labelColor" : "rgb(76, 175, 80)",
                   "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
@@ -4164,7 +4164,10 @@
                     "entityAlias" : null,
                     "entityKey" : null,
                     "entityKeyType" : null
-                  }
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 },
                 "axis2" : {
                   "units" : "°C",
@@ -4179,7 +4182,7 @@
                     "weight" : "600",
                     "lineHeight" : "1"
                   },
-                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "labelColor" : "rgb(232, 150, 35)",
                   "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
@@ -4217,7 +4220,10 @@
                     "entityAlias" : null,
                     "entityKey" : null,
                     "entityKeyType" : null
-                  }
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 }
               },
               "thresholds" : [ ],
