@@ -3757,7 +3757,7 @@
           "config" : {
             "title" : "Current values - current day",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -4218,7 +4218,8 @@
                 }
               },
               "thresholds" : [ ],
-              "dataZoom" : false,
+              "dataZoom" : true,
+              "dataZoomUpdateTimewindow" : false,
               "stack" : false,
               "grid" : {
                 "show" : false,
@@ -4371,8 +4372,7 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px",
-              "dataZoomUpdateTimewindow" : false
+              "padding" : "12px"
             },
             "enableDataExport" : true,
             "titleColor" : null,
@@ -4385,12 +4385,12 @@
             "timewindow" : {
               "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 0,
-                "interval" : 300000,
-                "timewindowMs" : 86400000
+                "realtimeType" : 1,
+                "quickInterval" : "CURRENT_WEEK_ISO"
               },
               "aggregation" : {
-                "type" : "AVG"
+                "type" : "NONE",
+                "limit" : 25000
               }
             },
             "displayTimewindow" : true
