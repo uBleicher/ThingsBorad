@@ -3291,25 +3291,43 @@
               "dataKeys" : [ {
                 "name" : "MachineType",
                 "type" : "timeseries",
-                "label" : "MachineType 2",
+                "label" : "Machine type:",
                 "color" : "#ffeb3b",
-                "settings" : { }
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "SerialNumber",
                 "type" : "timeseries",
-                "label" : "SerialNumber 2",
+                "label" : "Serial number:",
                 "color" : "#03a9f4",
-                "settings" : { }
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "MachineConditionStateText",
                 "type" : "timeseries",
-                "label" : "MachineConditionStateText",
+                "label" : "Machine condition state:",
                 "color" : "#ff9800",
-                "settings" : { }
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "TempCPU",
                 "type" : "timeseries",
-                "label" : "TempCPU",
+                "label" : "Temp CPU:",
                 "color" : "#673ab7",
                 "settings" : { },
                 "aggregationType" : "NONE",
@@ -3321,7 +3339,7 @@
               }, {
                 "name" : "TempENV",
                 "type" : "timeseries",
-                "label" : "TempENV",
+                "label" : "Temp ENV:",
                 "color" : "#cddc39",
                 "settings" : { },
                 "aggregationType" : "NONE",
@@ -3341,7 +3359,7 @@
               "dataKeys" : [ {
                 "name" : "TotalSteamConsumption",
                 "type" : "timeseries",
-                "label" : "TotalSteamConsumption",
+                "label" : "Total steam consumption:",
                 "color" : "#607d8b",
                 "settings" : { },
                 "aggregationType" : "NONE",
@@ -3353,7 +3371,7 @@
               }, {
                 "name" : "CurrSteamFlowRate",
                 "type" : "timeseries",
-                "label" : "CurrSteamFlowRate",
+                "label" : "Current steam flow rate:",
                 "color" : "#8bc34a",
                 "settings" : { },
                 "aggregationType" : "NONE",
