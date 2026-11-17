@@ -788,12 +788,12 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 0,
-                "units" : "kg",
+                "decimals" : 3,
+                "units" : "t",
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -848,7 +848,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "kg",
+                  "units" : "t",
                   "decimals" : 0,
                   "show" : true,
                   "label" : "",
@@ -1102,12 +1102,12 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 0,
-                "units" : "kg",
+                "decimals" : 3,
+                "units" : "t",
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1162,7 +1162,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "kg",
+                  "units" : "t",
                   "decimals" : 0,
                   "show" : true,
                   "label" : "",
@@ -1871,7 +1871,7 @@
           "config" : {
             "title" : "Steam consumption - current month",
             "showTitle" : true,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -1895,12 +1895,12 @@
                   "type" : "bar",
                   "yAxisId" : "default"
                 },
-                "decimals" : 0,
+                "decimals" : 2,
                 "aggregationType" : null,
-                "units" : "kg",
+                "units" : "t",
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1955,7 +1955,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "kg/h",
+                  "units" : "t",
                   "decimals" : 0,
                   "show" : true,
                   "label" : "",
@@ -3435,7 +3435,7 @@
           "config" : {
             "title" : "Steam consumption - current week",
             "showTitle" : true,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -3519,7 +3519,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "kg/h",
+                  "units" : "kg",
                   "decimals" : 0,
                   "show" : true,
                   "label" : "",
