@@ -3383,7 +3383,7 @@
               }, {
                 "name" : "CurrSteamTemperature",
                 "type" : "timeseries",
-                "label" : "CurrSteamTemperature",
+                "label" : "Current steam temperature:",
                 "color" : "#e91e63",
                 "settings" : { },
                 "aggregationType" : "NONE",
@@ -3395,7 +3395,7 @@
               }, {
                 "name" : "CurrSteamPressure",
                 "type" : "timeseries",
-                "label" : "CurrSteamPressure",
+                "label" : "Current steam pressure:",
                 "color" : "#3f51b5",
                 "settings" : { },
                 "aggregationType" : "NONE",
@@ -3407,7 +3407,7 @@
               }, {
                 "name" : "CurrSteamSaturationDeltaT",
                 "type" : "timeseries",
-                "label" : "CurrSteamSaturationDeltaT",
+                "label" : "Current steam saturation deltaT:",
                 "color" : "#ffeb3b",
                 "settings" : { },
                 "aggregationType" : "NONE",
