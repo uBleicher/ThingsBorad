@@ -1094,7 +1094,7 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "SteamConsumptionDaily",
+                "name" : "SteamConsumptionYearTotal",
                 "type" : "timeseries",
                 "label" : "Total Steam Consumption",
                 "color" : "#048AD3",
@@ -1370,14 +1370,14 @@
             "enableFullscreen" : true,
             "actions" : { },
             "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 0,
-                "timewindowMs" : 315360000000,
-                "interval" : 31536000000
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 0,
+                "timewindowMs" : 315360000000
               },
               "aggregation" : {
-                "type" : "SUM"
+                "type" : "NONE",
+                "limit" : 25000
               }
             },
             "displayTimewindow" : true
