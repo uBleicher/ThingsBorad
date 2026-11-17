@@ -780,7 +780,7 @@
               "type" : "device",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
-                "name" : "steamConsumption_1d",
+                "name" : "SteamConsumptionDayTotal",
                 "type" : "timeseries",
                 "label" : "Total Steam Consumption",
                 "color" : "#048AD3",
