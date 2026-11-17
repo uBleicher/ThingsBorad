@@ -1076,7 +1076,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Total steam consumption",
+            "title" : "Total steam consumption - last years",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1096,7 +1096,7 @@
               "dataKeys" : [ {
                 "name" : "SteamConsumptionYearTotal",
                 "type" : "timeseries",
-                "label" : "Total Steam Consumption",
+                "label" : "Total steam consumption - last years",
                 "color" : "#048AD3",
                 "settings" : {
                   "type" : "bar",
