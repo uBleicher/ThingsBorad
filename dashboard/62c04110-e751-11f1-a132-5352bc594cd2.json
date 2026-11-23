@@ -4432,7 +4432,7 @@
       "states" : {
         "default" : {
           "name" : "Gerätedetails",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -4523,7 +4523,7 @@
         },
         "ger_teauswahl" : {
           "name" : "Geräteauswahl",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : { },
@@ -4581,7 +4581,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795450309133,
+        "aiUpdateTs" : 1795450309341,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
