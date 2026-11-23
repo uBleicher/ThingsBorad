@@ -21,7 +21,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "69d98c00-b262-11f1-b747-f73439e59bea"
+      "id" : "29734230-e752-11f1-a132-5352bc594cd2"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -36,7 +36,7 @@
       "id" : "a1825410-ce29-11f1-8030-1df5d66d741d"
     },
     "softwareId" : null,
-    "type" : "veit_machine"
+    "type" : "SM50"
   },
   "credentials" : {
     "credentialsId" : "w7rbRNwjNHg2Iqw3OiaN",
@@ -46,11 +46,11 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1792078042587,
+      "lastUpdateTs" : 1795119951170,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -58,99 +58,38 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1792076162395,
-      "longValue" : 1792076162394,
+      "lastUpdateTs" : 1795119951160,
+      "longValue" : 1795119951158,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1793187283626,
-      "longValue" : 1793187282562,
+      "lastUpdateTs" : 1795119350304,
+      "longValue" : 1795119348456,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1792078042587,
-      "longValue" : 1792078042587,
+      "lastUpdateTs" : 1795086488487,
+      "longValue" : 1795086488487,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1793187304739,
-      "longValue" : 1793187304739,
+      "lastUpdateTs" : 1795119369687,
+      "longValue" : 1795119369687,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
   },
   "calculatedFields" : [ {
-    "additionalInfo" : {
-      "aiGenerated" : true,
-      "aiGeneratedBy" : "AI Assistant",
-      "aiUpdated" : true,
-      "aiUpdateTs" : 1789539146433,
-      "aiUpdatedBy" : [ "AI Assistant" ]
-    },
-    "configuration" : {
-      "type" : "ENTITY_AGGREGATION",
-      "output" : {
-        "type" : "TIME_SERIES",
-        "decimalsByDefault" : 2,
-        "strategy" : {
-          "type" : "IMMEDIATE",
-          "processCfs" : true,
-          "saveLatest" : true,
-          "saveTimeSeries" : true,
-          "sendWsUpdate" : true,
-          "ttl" : 315360000
-        }
-      },
-      "arguments" : {
-        "steamConsumptionDelta" : {
-          "defaultValue" : "",
-          "refEntityKey" : {
-            "key" : "steamConsumptionDelta",
-            "type" : "TS_LATEST"
-          }
-        }
-      },
-      "interval" : {
-        "type" : "DAY",
-        "tz" : "Europe/Berlin"
-      },
-      "metrics" : {
-        "steamConsumption_1d" : {
-          "function" : "SUM",
-          "input" : {
-            "type" : "key",
-            "key" : "steamConsumptionDelta"
-          }
-        }
-      },
-      "produceIntermediateResult" : true,
-      "watermark" : null
-    },
-    "configurationVersion" : 0,
-    "debugSettings" : null,
-    "name" : "SM50 - Steam consumption daily",
-    "tenantId" : {
-      "entityType" : "TENANT",
-      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
-    },
-    "type" : "ENTITY_AGGREGATION"
-  }, {
-    "additionalInfo" : {
-      "aiGenerated" : true,
-      "aiGeneratedBy" : "AI Assistant",
-      "aiUpdated" : true,
-      "aiUpdateTs" : 1789539132363,
-      "aiUpdatedBy" : [ "AI Assistant" ]
-    },
+    "additionalInfo" : { },
     "configuration" : {
       "type" : "SCRIPT",
       "output" : {
@@ -161,24 +100,28 @@
           "saveLatest" : true,
           "saveTimeSeries" : true,
           "sendWsUpdate" : true,
-          "ttl" : 7776000
+          "ttl" : 0
         }
       },
       "arguments" : {
-        "SteamConsumption_readings" : {
-          "limit" : 2,
+        "TotalSteamConsumption" : {
+          "limit" : 1000,
           "refEntityKey" : {
             "key" : "TotalSteamConsumption",
             "type" : "TS_ROLLING"
           },
-          "timeWindow" : 1800000
+          "timeWindow" : 172800000
         }
       },
-      "expression" : "if (SteamConsumption_readings.size < 2) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar prev = SteamConsumption_readings.first();\nvar curr = SteamConsumption_readings.last();\nif (isNaN(prev) || isNaN(curr)) {\n    return { \"steamConsumptionDelta\": 0.0 };\n}\nvar delta = 0.0;\nif (curr < prev) {\n    delta = (curr >= 0 ? curr : 0.0);\n} else {\n    delta = curr - prev;\n}\nreturn { \"steamConsumptionDelta\": toFixed(delta, 4) };"
+      "expression" : "function epochUtc(y, m, d, hour) {\n    var y2 = y;\n    if (m <= 2) {\n        y2 = y2 - 1;\n    }\n    var era = Math.floor(y2 / 400);\n    var yoe = y2 - era * 400;\n    var shift = 9;\n    if (m > 2) {\n        shift = -3;\n    }\n    var doy = Math.floor((153 * (m + shift) + 2) / 5) + d - 1;\n    var doe = yoe * 365 + Math.floor(yoe / 4) - Math.floor(yoe / 100) + doy;\n    var days = era * 146097 + doe - 719468;\n    return (days * 86400 + hour * 3600) * 1000;\n}\n\nfunction add(a, b) {\n    return (a + b) * 1;\n}\n\nfunction sub(a, b) {\n    return (a - b) * 1;\n}\n\nif (TotalSteamConsumption.size < 2) {\n    return {\n        \"SteamConsumptionDaily\": 0.0\n    };\n}\n\nvar currTs = 0;\nvar curr = null;\nforeach(reading: TotalSteamConsumption.values) {\n    if (reading.value != null && !isNaN(reading.value) && reading.value > 0) {\n        currTs = reading.ts;\n        curr = reading.value;\n    }\n}\n\nif (curr == null) {\n    return {\n        \"SteamConsumptionDaily\": 0.0\n    };\n}\n\nvar stamp = new Date(currTs);\nvar year = stamp.getUTCFullYear();\nvar t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];\nvar dowMarch = (year + Math.floor(year / 4) - Math.floor(year / 100) + Math.floor(year / 400) + t[2] + 31) % 7;\nvar dowOct = (year + Math.floor(year / 4) - Math.floor(year / 100) + Math.floor(year / 400) + t[9] + 31) % 7;\nvar dstStart = epochUtc(year, 3, 31 - dowMarch, 1);\nvar dstEnd = epochUtc(year, 10, 31 - dowOct, 1);\n\nvar offsetMs = 3600000;\nif (currTs >= dstStart && currTs < dstEnd) {\n    offsetMs = 7200000;\n}\n\nvar readingLocal = add(currTs, offsetMs);\nvar readingDayMod = readingLocal % 86400000;\nvar readingMidnight = sub(readingLocal, readingDayMod);\n\nvar nowTs = new Date().getTime();\nvar nowStamp = new Date(nowTs);\nvar nowYear = nowStamp.getUTCFullYear();\nvar nowDowMarch = (nowYear + Math.floor(nowYear / 4) - Math.floor(nowYear / 100) + Math.floor(nowYear / 400) + t[2] + 31) % 7;\nvar nowDowOct = (nowYear + Math.floor(nowYear / 4) - Math.floor(nowYear / 100) + Math.floor(nowYear / 400) + t[9] + 31) % 7;\nvar nowDstStart = epochUtc(nowYear, 3, 31 - nowDowMarch, 1);\nvar nowDstEnd = epochUtc(nowYear, 10, 31 - nowDowOct, 1);\n\nvar nowOffset = 3600000;\nif (nowTs >= nowDstStart && nowTs < nowDstEnd) {\n    nowOffset = 7200000;\n}\n\nvar nowLocal = add(nowTs, nowOffset);\nvar nowDayMod = nowLocal % 86400000;\nvar nowMidnight = sub(nowLocal, nowDayMod);\n\nif (readingMidnight < nowMidnight) {\n    return {\n        \"SteamConsumptionDaily\": 0.0\n    };\n}\n\nvar dayStart = sub(readingMidnight, offsetMs);\nvar prev = null;\nvar firstToday = null;\nforeach(sample: TotalSteamConsumption.values) {\n    if (sample.value != null && !isNaN(sample.value) && sample.value > 0) {\n        if (sample.ts <= dayStart) {\n            prev = sample.value;\n        }\n        if (sample.ts > dayStart && firstToday == null) {\n            firstToday = sample.value;\n        }\n    }\n}\n\nif (prev == null) {\n    prev = firstToday;\n}\nif (prev == null) {\n    return {\n        \"SteamConsumptionDaily\": 0.0\n    };\n}\n\nvar delta = 0.0;\nif (curr < prev) {\n    delta = curr;\n} else {\n    delta = sub(curr, prev);\n}\n\nreturn {\n    \"SteamConsumptionDaily\": delta\n};"
     },
     "configurationVersion" : 0,
-    "debugSettings" : null,
-    "name" : "SM50 - Steam consumption delta",
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1793632970916,
+      "failuresEnabled" : true
+    },
+    "name" : "SM50 - Steam consumption daily",
     "tenantId" : {
       "entityType" : "TENANT",
       "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
@@ -225,5 +168,109 @@
       "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
     },
     "type" : "SCRIPT"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ENTITY_AGGREGATION",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 0
+        }
+      },
+      "arguments" : {
+        "SteamConsumptionDaily" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "SteamConsumptionDaily",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "interval" : {
+        "type" : "DAY",
+        "tz" : "Europe/Berlin"
+      },
+      "metrics" : {
+        "SteamConsumptionDayTotal" : {
+          "function" : "MAX",
+          "input" : {
+            "type" : "key",
+            "key" : "SteamConsumptionDaily"
+          }
+        }
+      },
+      "produceIntermediateResult" : true,
+      "watermark" : null
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1794907331080,
+      "failuresEnabled" : true
+    },
+    "name" : "SM50 - SteamConsumptionDayTotal",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
+    },
+    "type" : "ENTITY_AGGREGATION"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ENTITY_AGGREGATION",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 0
+        }
+      },
+      "arguments" : {
+        "SteamConsumptionDayTotal" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "SteamConsumptionDayTotal",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "interval" : {
+        "type" : "YEAR",
+        "tz" : "Europe/Berlin"
+      },
+      "metrics" : {
+        "SteamConsumptionYearTotal" : {
+          "function" : "SUM",
+          "input" : {
+            "type" : "key",
+            "key" : "SteamConsumptionDayTotal"
+          }
+        }
+      },
+      "produceIntermediateResult" : true,
+      "watermark" : null
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1794907331080,
+      "failuresEnabled" : true
+    },
+    "name" : "SM50 - SteamConsumptionYearTotal",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d67d6bc0-b01d-11f1-9b75-572f450238a2"
+    },
+    "type" : "ENTITY_AGGREGATION"
   } ]
 }
