@@ -29,7 +29,7 @@
       "entityType" : "DEVICE",
       "id" : "4ce3c660-e728-11f1-9bb3-03babb947b58"
     },
-    "label" : "",
+    "label" : "direct Thingsboard via MQTT",
     "name" : "Entwicklungsteam-Elektro-Software-SM1335-4G",
     "ownerId" : {
       "entityType" : "CUSTOMER",
@@ -50,8 +50,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795429570025,
+      "lastUpdateTs" : 1795430287046,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1795430287043,
+      "longValue" : 1795430287042,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1795429671275,
+      "longValue" : 1795429671275,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1795429671274,
+      "longValue" : 1795429671274,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
