@@ -1,0 +1,86 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "69d98c00-b262-11f1-b747-f73439e59bea"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "b37bec60-bbd4-11f1-890c-f73439e59bea"
+    },
+    "label" : "SF27-SN202306300805",
+    "name" : "Sc00e2a7gm01.br-automation.com",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "veit_machine"
+  },
+  "credentials" : {
+    "credentialsId" : "MtF4hk3CiRkUoIlYDT7w",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f14c0b40-b816-11f1-b020-572f450238a2"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b37bec60-bbd4-11f1-890c-f73439e59bea"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 23220610
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1795418886673,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1795418886668,
+      "longValue" : 1795418886667,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1795418270107,
+      "longValue" : 1795418267779,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
