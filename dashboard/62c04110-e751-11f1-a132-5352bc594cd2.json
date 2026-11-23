@@ -1584,7 +1584,8 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : [ ]
+              "latestDataKeys" : [ ],
+              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
             } ],
             "useDashboardTimewindow" : false,
             "settings" : {
@@ -4564,7 +4565,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795450299338,
+        "aiUpdateTs" : 1795450299658,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
