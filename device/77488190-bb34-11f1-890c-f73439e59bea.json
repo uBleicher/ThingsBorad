@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "77488190-bb34-11f1-890c-f73439e59bea"
     },
-    "label" : "P26121-SN202604220624-ID-Logiszics-Poland-TF57-C-3-4",
-    "name" : "TF57-SN202604220624",
+    "label" : "TF57-SN202604220624",
+    "name" : "Sc017d03gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795434176098,
+      "lastUpdateTs" : 1795434825392,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795429425149,
-      "longValue" : 1795429425148,
+      "lastUpdateTs" : 1795434825385,
+      "longValue" : 1795434825383,
       "strValue" : null
     }, {
       "booleanValue" : null,
