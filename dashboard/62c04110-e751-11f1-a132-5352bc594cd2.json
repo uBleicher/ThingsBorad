@@ -4528,13 +4528,22 @@
             "groupType" : "DEVICE",
             "entityGroup" : "d684bec0-b01d-11f1-9b75-572f450238a2"
           }
+        },
+        "f9de84ef-e8ac-47ee-97b9-748ccc6c7984" : {
+          "id" : "f9de84ef-e8ac-47ee-97b9-748ccc6c7984",
+          "alias" : "SM50 Geräte",
+          "filter" : {
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "SM50" ],
+            "type" : "deviceType"
+          }
         }
       },
       "additionalInfo" : {
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795449769991,
+        "aiUpdateTs" : 1795450288217,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
