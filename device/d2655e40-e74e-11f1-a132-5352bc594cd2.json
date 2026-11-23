@@ -1,0 +1,78 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "29734230-e752-11f1-a132-5352bc594cd2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "d2655e40-e74e-11f1-a132-5352bc594cd2"
+    },
+    "label" : "TF57-SN202409200001",
+    "name" : "Sc002f77gm01.br-automation.com",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "SM50"
+  },
+  "credentials" : {
+    "credentialsId" : "FJSiBfQKFxr0cuCdHtMJ",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f14c0b40-b816-11f1-b020-572f450238a2"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d2655e40-e74e-11f1-a132-5352bc594cd2"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 25851605
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1795446116098,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1795448444098,
+      "longValue" : 1795448442052,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
