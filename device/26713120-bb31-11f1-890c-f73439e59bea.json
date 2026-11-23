@@ -29,7 +29,7 @@
       "entityType" : "DEVICE",
       "id" : "26713120-bb31-11f1-890c-f73439e59bea"
     },
-    "label" : "CF20-P24231-SN202407230296-NetExpress-Monaco",
+    "label" : "CF20-SN202407230296",
     "name" : "Sc00df92gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795436287263,
+      "lastUpdateTs" : 1795443487497,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795436287247,
-      "longValue" : 1795436287245,
+      "lastUpdateTs" : 1795443487490,
+      "longValue" : 1795443487489,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1795435640106,
-      "longValue" : 1795435639747,
+      "lastUpdateTs" : 1795442843098,
+      "longValue" : 1795442840216,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
