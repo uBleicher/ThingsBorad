@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "f8ce9390-bb33-11f1-890c-f73439e59bea"
     },
-    "label" : "SF27E-SN202505210008-Brocke-Germany",
-    "name" : "SF27E-SN202505210008-PPP",
+    "label" : "SF27e-SN202505210008",
+    "name" : "Sc013e96gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795435802104,
+      "lastUpdateTs" : 1795436445462,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795434645377,
-      "longValue" : 1795434645375,
+      "lastUpdateTs" : 1795436445455,
+      "longValue" : 1795436445453,
       "strValue" : null
     }, {
       "booleanValue" : null,
