@@ -30,7 +30,7 @@
       "id" : "979838c0-bb41-11f1-890c-f73439e59bea"
     },
     "label" : "TF57-P26161-SN202605060138-Bauerfeind-Germany-TF57-2-3",
-    "name" : "TF57-P26161-SN202605060138",
+    "name" : "Sc017dc3gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795437140102,
+      "lastUpdateTs" : 1795437799187,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795430538963,
-      "longValue" : 1795430538962,
+      "lastUpdateTs" : 1795437799186,
+      "longValue" : 1795437799185,
       "strValue" : null
     }, {
       "booleanValue" : null,
