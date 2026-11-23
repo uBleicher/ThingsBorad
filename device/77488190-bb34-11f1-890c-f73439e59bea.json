@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "77488190-bb34-11f1-890c-f73439e59bea"
     },
-    "label" : "TF57-SN202604220624",
-    "name" : "P26121-SN202604220624-ID-Logiszics-Poland-TF57-C-3-4",
+    "label" : "P26121-SN202604220624-ID-Logiszics-Poland-TF57-C-3-4",
+    "name" : "TF57-SN202604220624",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
