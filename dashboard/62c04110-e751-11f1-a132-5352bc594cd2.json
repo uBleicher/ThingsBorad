@@ -161,8 +161,8 @@
               }
             },
             "datasources" : [ {
-              "type" : "device",
-              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "type" : "entity",
+              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b",
               "dataKeys" : [ {
                 "name" : "UpTimeDaily",
                 "type" : "timeseries",
@@ -208,8 +208,7 @@
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              },
-              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b"
+              }
             } ],
             "titleColor" : null,
             "showTitleIcon" : null,
@@ -255,7 +254,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionRate",
@@ -773,7 +772,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionDayTotal",
@@ -1088,7 +1087,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionYearTotal",
@@ -1403,7 +1402,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "UpTimeDaily",
@@ -1883,7 +1882,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionDaily",
@@ -2206,7 +2205,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "rSteamFlowRateHourPeak1",
@@ -2722,9 +2721,9 @@
           "sizeY" : 5,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b",
               "dataKeys" : [ {
                 "name" : "rSteamFlowRateHourPeak1",
                 "type" : "timeseries",
@@ -3287,8 +3286,8 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
-              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "type" : "entity",
+              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b",
               "dataKeys" : [ {
                 "name" : "MachineType",
                 "type" : "timeseries",
@@ -3467,7 +3466,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
               "dataKeys" : [ {
                 "name" : "SteamConsumptionDaily",
@@ -3790,8 +3789,8 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ {
-              "type" : "device",
-              "deviceId" : "9214bc20-b5b0-11f1-890c-f73439e59bea",
+              "type" : "entity",
+              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b",
               "dataKeys" : [ {
                 "name" : "CurrSteamFlowRate",
                 "type" : "timeseries",
@@ -4038,8 +4037,7 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : [ ],
-              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b"
+              "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
             "settings" : {
@@ -4505,15 +4503,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 86400000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
             "settings" : {
               "enableSearch" : true,
               "displayPagination" : true,
