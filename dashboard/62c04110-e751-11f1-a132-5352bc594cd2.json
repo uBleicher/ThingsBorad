@@ -209,7 +209,7 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "entityAliasId" : "7177361f-7318-43bd-b813-55bbf9352c7a"
+              "entityAliasId" : "c192a990-9f53-45a1-9753-9d91f3c4838b"
             } ],
             "titleColor" : null,
             "showTitleIcon" : null,
@@ -4708,7 +4708,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795450330832,
+        "aiUpdateTs" : 1795450331337,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
