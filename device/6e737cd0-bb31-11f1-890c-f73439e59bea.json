@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "6e737cd0-bb31-11f1-890c-f73439e59bea"
     },
-    "label" : "SF27-SN202605120097-Wieser-Austria",
-    "name" : "SF27-SN202605120097-PPP",
+    "label" : "SF27-SN202605120097",
+    "name" : "Sc017eb7gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795435952098,
+      "lastUpdateTs" : 1795436587265,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795431187074,
-      "longValue" : 1795431187072,
+      "lastUpdateTs" : 1795436587257,
+      "longValue" : 1795436587255,
       "strValue" : null
     }, {
       "booleanValue" : null,
