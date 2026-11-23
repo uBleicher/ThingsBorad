@@ -21,7 +21,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "69d98c00-b262-11f1-b747-f73439e59bea"
+      "id" : "29734230-e752-11f1-a132-5352bc594cd2"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -33,7 +33,7 @@
     "name" : "Sc018c09gm01.br-automation.com-new",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "veit_machine"
+    "type" : "SM50"
   },
   "credentials" : {
     "credentialsId" : "1OSptv0f81hD4YqU7Ap4",
