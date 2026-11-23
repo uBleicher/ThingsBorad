@@ -30,7 +30,7 @@
       "id" : "26713120-bb31-11f1-890c-f73439e59bea"
     },
     "label" : "CF20-P24231-SN202407230296-NetExpress-Monaco",
-    "name" : "CF20-P24231-SN202407230296",
+    "name" : "Sc00df92gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795435640106,
+      "lastUpdateTs" : 1795436287263,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795434487187,
-      "longValue" : 1795434487186,
+      "lastUpdateTs" : 1795436287247,
+      "longValue" : 1795436287245,
       "strValue" : null
     }, {
       "booleanValue" : null,
