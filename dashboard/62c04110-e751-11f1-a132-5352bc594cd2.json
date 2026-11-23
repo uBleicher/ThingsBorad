@@ -4427,6 +4427,126 @@
           },
           "sizeX" : 12,
           "sizeY" : 6
+        },
+        "f48e00db-5a3c-4b43-8f91-101b67083050" : {
+          "id" : "f48e00db-5a3c-4b43-8f91-101b67083050",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.entities_table",
+          "config" : {
+            "title" : "SM50 Geräteauswahl",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "f9de84ef-e8ac-47ee-97b9-748ccc6c7984",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Gerät",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "260px"
+                }
+              }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Bezeichnung",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "220px"
+                }
+              }, {
+                "name" : "SerialNumber",
+                "type" : "timeseries",
+                "label" : "Seriennummer",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "160px"
+                }
+              }, {
+                "name" : "MachineConditionStateText",
+                "type" : "timeseries",
+                "label" : "Maschinenzustand",
+                "color" : "#ffc107",
+                "settings" : {
+                  "columnWidth" : "180px"
+                }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "Status",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "const on = value === true || value === 'true';\nconst c = on ? '#2E7D32' : '#D12730';\nreturn `<span style=\"padding: 4px 10px; border-radius: 6px; font-size: 13px; font-weight: 500; color: ${c}; background: color-mix(in srgb, ${c} 14%, transparent);\">${on ? 'Online' : 'Offline'}</span>`;",
+                  "columnWidth" : "120px"
+                }
+              }, {
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "Letzte Aktivität",
+                "color" : "#00bcd4",
+                "settings" : {
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if (!value) return '–';\nconst m = Math.round((Date.now() - value) / 60000);\nreturn m < 1 ? 'gerade eben' : m < 60 ? m + ' Min. her' : m < 1440 ? Math.round(m / 60) + ' Std. her' : Math.round(m / 1440) + ' Tage her';",
+                  "columnWidth" : "160px"
+                }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "pageStepIncrement" : 10,
+              "pageStepCount" : 3,
+              "defaultSortOrder" : "Gerät"
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "c078182f-7413-4e47-88cb-ee5381c59ce7",
+                "name" : "Open details",
+                "icon" : "open_in_new",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : true
+              } ],
+              "actionCellButton" : [ {
+                "id" : "c4097c3f-b93a-4155-944d-77c47183e33a",
+                "name" : "Diagramme anzeigen",
+                "icon" : "bar_chart",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : true
+              } ]
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 24,
+          "sizeY" : 10
         }
       },
       "states" : {
@@ -4526,7 +4646,14 @@
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "f48e00db-5a3c-4b43-8f91-101b67083050" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -4581,7 +4708,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795450309341,
+        "aiUpdateTs" : 1795450330832,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
