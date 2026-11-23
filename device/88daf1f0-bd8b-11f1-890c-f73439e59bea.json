@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "88daf1f0-bd8b-11f1-890c-f73439e59bea"
     },
-    "label" : "SF27-SN202608040003-Reinigung-Tuna-Germany",
-    "name" : "SF27-SN202608040003-PPP",
+    "label" : "SF27-SN202608040003",
+    "name" : "Sc018c69gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
