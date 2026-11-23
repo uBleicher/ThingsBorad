@@ -29,7 +29,7 @@
       "entityType" : "DEVICE",
       "id" : "efbb8c60-bc99-11f1-890c-f73439e59bea"
     },
-    "label" : "SF27-SN202602020025-Ecofab-Limited-Bangladesh",
+    "label" : "SF27-SN202602020025",
     "name" : "Sc015f7agm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795435219108,
+      "lastUpdateTs" : 1795442599335,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795435219106,
-      "longValue" : 1795435219106,
+      "lastUpdateTs" : 1795442599332,
+      "longValue" : 1795442599332,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1795434563099,
-      "longValue" : 1795434562419,
+      "lastUpdateTs" : 1795441973098,
+      "longValue" : 1795441972025,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
