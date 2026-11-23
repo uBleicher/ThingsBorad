@@ -4563,13 +4563,25 @@
             "deviceTypes" : [ "SM50" ],
             "type" : "deviceType"
           }
+        },
+        "c192a990-9f53-45a1-9753-9d91f3c4838b" : {
+          "id" : "c192a990-9f53-45a1-9753-9d91f3c4838b",
+          "alias" : "Ausgewähltes Gerät",
+          "filter" : {
+            "resolveMultiple" : false,
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "9214bc20-b5b0-11f1-890c-f73439e59bea"
+            },
+            "type" : "stateEntity"
+          }
         }
       },
       "additionalInfo" : {
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1795450301249,
+        "aiUpdateTs" : 1795450309133,
         "aiUpdatedBy" : [ "AI Assistant" ]
       },
       "filters" : {
