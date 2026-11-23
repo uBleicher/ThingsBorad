@@ -29,8 +29,8 @@
       "entityType" : "DEVICE",
       "id" : "88daf1f0-bd8b-11f1-890c-f73439e59bea"
     },
-    "label" : "",
-    "name" : "SF27-SN202608040003",
+    "label" : "SF27-SN202608040003-Reinigung-Tuna-Germany",
+    "name" : "SF27-SN202608040003-PPP",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "veit_machine"
@@ -56,11 +56,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795434320099,
+      "lastUpdateTs" : 1795434945396,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1795433145313,
-      "longValue" : 1795433145311,
+      "lastUpdateTs" : 1795434945390,
+      "longValue" : 1795434945388,
       "strValue" : null
     }, {
       "booleanValue" : null,
