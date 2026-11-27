@@ -29,7 +29,7 @@
       "entityType" : "DEVICE",
       "id" : "d2655e40-e74e-11f1-a132-5352bc594cd2"
     },
-    "label" : "TF57-SN202409200001",
+    "label" : "SM50-SN202610070002-Test",
     "name" : "Sc002f77gm01.br-automation.com",
     "ownerId" : null,
     "softwareId" : null,
@@ -60,16 +60,40 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1795446116098,
+      "lastUpdateTs" : 1795769693091,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1795529412867,
+      "longValue" : 1795529412865,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1795448444098,
-      "longValue" : 1795448442052,
+      "lastUpdateTs" : 1795776039082,
+      "longValue" : 1795776036597,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1795775786665,
+      "longValue" : 1795775786665,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1795775777189,
+      "longValue" : 1795775777189,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
